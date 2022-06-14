@@ -28,7 +28,7 @@ const messagesFromReactAppListener = (
         let stats = document.getElementById('div_stats_squads_standard_for')
         console.log(stats)
 
-        response(stats.innerText);
+        response(stats.innerHTML);
     }
 
     if (isValidated && message.message === 'click') {
@@ -50,9 +50,12 @@ const addClick = (el) => {
         let statsDiv = document.getElementById('div_stats_squads_standard_for')
         let statsTable = statsDiv.getElementsByTagName('table')[0]
         let cells = statsTable.querySelectorAll('[data-stat="'+stat+'"]')
+        const toggleFunc = (cells[0].classList.contains('select') ? 
+            (element) => {element.classList.remove('select')} : 
+            (element) => {element.classList.add('select')})
         for (let index = 0; index < cells.length; index++) {
             const element = cells[index];
-            element.classList.add('select')
+            toggleFunc(element)
         }
     })
 }
@@ -78,15 +81,16 @@ const makeClickable = () => {
     }
     for (let index = 0; index < tableBody.getElementsByTagName('tr').length; index++) {
         const row = tableBody.getElementsByTagName('tr')[index];
-        for (let index = 0; index < row.length; index++) {
-            const cell = row[index];
+        const rowCells = row.getElementsByTagName('td')
+        for (let index = 0; index < rowCells.length; index++) {
+            const cell = rowCells[index];
             addClick(cell)
         }
     }
 }
 const main = () => {
     console.log('[content.ts] Main')
-    // makeClickable()
+    makeClickable()
     /**
      * Fired when a message is sent from either an extension process or a content script.
      */

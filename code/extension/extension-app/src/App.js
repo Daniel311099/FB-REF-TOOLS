@@ -7,7 +7,7 @@ import React, { useEffect, useState } from 'react'
 function App() {
     const [url, setUrl] = useState('g');
     const [responseFromContent, setResponseFromContent] = useState('');
-    const [message, setMessage] = useState('click')
+    const [message, setMessage] = useState('stats')
 
     useEffect(() => {
         const queryInfo = { active: true, lastFocusedWindow: true };
@@ -18,6 +18,24 @@ function App() {
             console.log(tabs)
         });
     }, []);
+
+    const URL = 'http://localhost:8000/scraper_api/stats'
+
+    const sendStats = async () => {
+        const response = await fetch(URL, {
+            method: 'POST',
+            headers: {'Content-Type': 'application/json'},
+            credentials: 'include',
+            // sameSite: 'none',
+            body: JSON.stringify(responseFromContent)
+        })
+        const content = await response.json()
+        console.log(content)
+    }
+
+    useEffect(() => {
+        sendStats()
+    }, [responseFromContent])
 
     const sendTestMessage = () => {
         const message_ = {
