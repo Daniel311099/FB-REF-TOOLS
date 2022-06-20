@@ -15,13 +15,13 @@ const initialState: TodosSliceState = {
 }
 
 export const todosSlice = createSlice({
-    name: 'todos',
+    name: 'td',
     initialState,
     reducers: {
-        addTodo: (state, action: PayloadAction<string>) => {
+        addTodo: (state: TodosSliceState, action: PayloadAction<string>) => {
             let num:number = state.todos.length
-            console.log(num, state.todos[num])
-            let newId:number = (num>0 ? state.todos[num-1].id+1 : 0)
+            console.log(num, state.todos[num-1])
+            let newId:number = (num ? state.todos[num-1].id+1 : 0)
             state.todos = [
                 ...state.todos,
                 {
@@ -31,7 +31,7 @@ export const todosSlice = createSlice({
                 }
             ]
         },
-        removeTodo: (state, action: PayloadAction<number>) => {
+        removeTodo: (state: TodosSliceState, action: PayloadAction<number>) => {
             state.todos = state.todos.filter(todo => {
                 return todo.id !== action.payload
             })
@@ -41,7 +41,7 @@ export const todosSlice = createSlice({
 
 export const {addTodo, removeTodo} = todosSlice.actions
 
-const store =  configureStore({
+const store = configureStore({
     reducer: {
         todos: todosSlice.reducer
     }

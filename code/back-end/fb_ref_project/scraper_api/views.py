@@ -1,3 +1,4 @@
+from html.parser import HTMLParser
 from django.http import JsonResponse
 # from back_end.django_server.fb_ref_project.scraper_api.scripts.fbref_tools import get_frame
 
@@ -8,9 +9,34 @@ import jwt
 # create sepreate module for view tools
 # import scrpaer tools 
 from .scripts.scraper_tools import get_url, get_frame, get_loc, get_page, parse
+from bs4 import BeautifulSoup as bs
 
 from stats_api.models import Player, Frame, Column, FrameType, ColumnType
 from users.models import User
+from .models import TestModel
+
+class TestView(APIView):
+    def post(self, request, *args, **kwargs):
+        doc = request.data
+        # print(doc)
+        # stats = bs(doc)
+        # row3 = stats.find('table').find_all('tr')[3]
+        # row3_data = {
+        #     cell.get('data-stat'): cell.text
+        #     for cell in row3.find_all('td')
+        # }
+        # print(row3_data)
+        # store = {}
+        store = TestModel.objects.first()
+        if not store:
+            store = TestModel(data=doc)
+            store.save()
+        print(store.data)
+
+        return JsonResponse(store.data, safe=False)
+    def get(self, request, *args, **kwargs):
+        data = TestModel.objects.first().data
+        return JsonResponse({'data': data}, safe=False)
 
 class AddFrame(APIView):
 

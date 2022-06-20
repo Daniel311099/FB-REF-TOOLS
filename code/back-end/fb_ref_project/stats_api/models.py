@@ -17,8 +17,8 @@ class FrameType(models.Model):
 
 # columns: column_id, frame_id, metadata
 
-# class Subjects():
-#     name = ''
+class Subjects():
+    name = ''
 
 class Frame(models.Model):
     frame_id = models.CharField(max_length=100)#use string as it may need to be alphanumeric
@@ -31,7 +31,7 @@ class Frame(models.Model):
         return self.frame_id
 
 class Player(models.Model):
-    player_id = models.IntegerField(max_length=100) #change to integer, use fb_ref ids
+    player_id = models.CharField(max_length=100, null=True) #change to integer, use fb_ref ids
     name = models.CharField(max_length=100)
     # nationality
     # team, etc

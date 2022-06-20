@@ -16,6 +16,7 @@ export const NewNoteInput: React.FC<NewNoteInputProps> = ({addNote}) => {
         addNote(note)
         setNote("")
     }
+    
 
     return (
 
