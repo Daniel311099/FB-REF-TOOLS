@@ -20,11 +20,23 @@
     ],
     "content_scripts": [
         {
-          "matches": ["http://*/*", "https://*/*"],
-          "css": [ "/content.css" ],
-          "js": ["./content.js"],
-          "all_frames": false,
-          "run_at": "document_end"
+            "matches": [
+                "http://*/*",
+                "https://*/*"
+            ],
+            "css": [
+                "/content.css"
+            ],
+            "js": [
+                "./content.js"
+            ],
+            "all_frames": false,
+            "run_at": "document_end"
         }
-      ]
+    ],
+    "web_accessible_resources": [
+        "main.js",
+        "localDB.js",
+        "idb"
+    ]
 }

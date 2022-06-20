@@ -1,5 +1,4 @@
 /*global chrome*/
-
 import logo from './logo.svg';
 import './App.css';
 import React, { useEffect, useState } from 'react'
@@ -21,20 +20,20 @@ function App() {
 
     const URL = 'http://localhost:8000/scraper_api/stats'
 
-    const sendStats = async () => {
+    const sendStats = async (data) => {
         const response = await fetch(URL, {
             method: 'POST',
             headers: {'Content-Type': 'application/json'},
             credentials: 'include',
             // sameSite: 'none',
-            body: JSON.stringify(responseFromContent)
+            body: JSON.stringify(data)
         })
         const content = await response.json()
         console.log(content)
     }
 
     useEffect(() => {
-        sendStats()
+        // sendStats()
     }, [responseFromContent])
 
     const sendTestMessage = () => {
@@ -68,6 +67,7 @@ function App() {
                 (response) => {
                     setResponseFromContent(response);
                     console.log(response, 'res')
+                    sendStats(response)
                 });
         });
     };
