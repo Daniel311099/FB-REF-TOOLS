@@ -1,0 +1,19 @@
+- add all object stores
+- clean code
+
+
+BUILD REACT EXTENSION:
+- allow entering regex
+- select columns for regex
+- build Tables
+- return csv
+
+components:
+- Tables list
+
+apis:
+- resolve regex
+
+
+now:
+- 
