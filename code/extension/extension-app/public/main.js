@@ -1,5 +1,5 @@
 
-import { connectDB, addSubject, addColumn } from "./localDB.js"
+import { connectDB, addSubject, addColumn, getColumns } from "./localDB.js"
 /*global chrome*/
 
 // const validateSender = (
@@ -14,11 +14,11 @@ import { connectDB, addSubject, addColumn } from "./localDB.js"
 // const TABLE_NAME = 'div_stats_squads_standard_for'
 const TABLE_NAME = 'div_stats_standard'
 
-const messagesFromReactAppListener = (
+function messagesFromReactAppListener (
     message,
     sender,
     response
-) => {
+) {
 
     const isValidated = true
 
@@ -66,10 +66,19 @@ const messagesFromReactAppListener = (
         response('clickable')
     }
 
-    // if (isValidated && message.message === "delete logo") {
-    //     const logo = document.getElementById('hplogo');
-    //     logo?.parentElement?.removeChild(logo)
-    // }
+    if (isValidated && message.message === 'get cols') {
+        const columns = getColumns(message.table).then(function (cols) {
+            console.log(cols)
+            response(cols)
+        })
+        return true
+    }
+}
+
+const resCols = async (prom) => {
+    let cols = await prom
+    console.log(cols)
+    return cols
 }
 
 // add update classes method
@@ -87,6 +96,10 @@ const addClick = (el) => {
             table: 'my_table'
         }
         addColumn(colObj)
+        chrome.runtime.sendMessage({message: 'notify react'}, (res) => {
+            console.log(res)
+        })
+        // notify react
         const toggleFunc = (cells[0].classList.contains('select') ? 
             (element) => {element.classList.remove('select')} : 
             (element) => {element.classList.add('select')})
@@ -126,7 +139,7 @@ const makeClickable = () => {
         }
     }
 }
-export const main = () => {
+export function main () {
     console.log('[content.ts] Main')
     makeClickable()
     connectDB()

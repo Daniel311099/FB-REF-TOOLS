@@ -2,11 +2,14 @@
 import logo from './logo.svg';
 import './App.css';
 import React, { useEffect, useState } from 'react'
+import { TableView } from './components/TableView';
 
 function App() {
     const [url, setUrl] = useState('g');
     const [responseFromContent, setResponseFromContent] = useState('');
     const [message, setMessage] = useState('stats')
+    const [columns, setColumns] = useState([])
+    const [reloadCols, setReloadCols] = useState(true)
 
     useEffect(() => {
         const queryInfo = { active: true, lastFocusedWindow: true };
@@ -71,6 +74,12 @@ function App() {
                 });
         });
     };
+
+    chrome.runtime.onMessage.addListener((message, sender, respose) => {
+        console.log(message)
+        setReloadCols(!reloadCols)
+        respose('notify worked')
+    })
     
     return (
         <div className="App">
@@ -90,9 +99,11 @@ function App() {
                 </a>
                 <button onClick={sendTestMessage}>click</button>
                 <input onChange={(e) => {setMessage(e.target.value)}}></input>
+                <TableView table="my_table" columns={columns} setColumns={setColumns} refresh={reloadCols}/>
             </header>
         </div>
     );
 }
 
 export default App;
+
