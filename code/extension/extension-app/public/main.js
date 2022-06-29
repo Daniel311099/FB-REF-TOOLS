@@ -13,7 +13,7 @@ import { connectDB, addSubject, addColumn, getColumns } from "./localDB.js"
 
 // const TABLE_NAME = 'div_stats_squads_standard_for'
 const TABLE_NAME = 'div_stats_standard'
-
+console.log('importing')
 function messagesFromReactAppListener (
     message,
     sender,
@@ -139,7 +139,7 @@ const makeClickable = () => {
         }
     }
 }
-export function main () {
+export function main() {
     console.log('[content.ts] Main')
     makeClickable()
     connectDB()
@@ -150,4 +150,4 @@ export function main () {
     
 }
 
-main();
+// main();

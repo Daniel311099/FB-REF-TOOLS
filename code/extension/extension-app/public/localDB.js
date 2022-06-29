@@ -15,7 +15,7 @@ import { openDB } from 'https://cdn.jsdelivr.net/npm/idb@7/+esm';
 //     parent table:
 //     name:
 //     custom column:
-//     placeholder
+//     placeholder6
 // }
 // competitions = {
 //     name,

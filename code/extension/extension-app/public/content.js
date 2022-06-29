@@ -9,7 +9,8 @@
 
 (async () => {
     const src = chrome.runtime.getURL("main.js");
+    console.log(src)
     const contentMain = await import(src);
     console.log(contentMain)
-    // contentMain.main();
+    contentMain.main();
   })();

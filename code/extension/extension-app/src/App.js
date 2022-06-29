@@ -3,6 +3,8 @@ import logo from './logo.svg';
 import './App.css';
 import React, { useEffect, useState } from 'react'
 import { TableView } from './components/TableView';
+import CreateTable from './components/CreateTable';
+import EditColumn from './components/EditColumn';
 
 function App() {
     const [url, setUrl] = useState('g');
@@ -100,6 +102,8 @@ function App() {
                 <button onClick={sendTestMessage}>click</button>
                 <input onChange={(e) => {setMessage(e.target.value)}}></input>
                 <TableView table="my_table" columns={columns} setColumns={setColumns} refresh={reloadCols}/>
+                <CreateTable />
+                <EditColumn />
             </header>
         </div>
     );

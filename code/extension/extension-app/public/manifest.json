@@ -36,7 +36,6 @@
     ],
     "web_accessible_resources": [
         "main.js",
-        "localDB.js",
-        "idb"
+        "localDB.js"
     ]
 }
