@@ -102,7 +102,7 @@ function App() {
                 <button onClick={sendTestMessage}>click</button>
                 <input onChange={(e) => {setMessage(e.target.value)}}></input>
                 <TableView table="my_table" columns={columns} setColumns={setColumns} refresh={reloadCols}/>
-                <CreateTable />
+                {/* <CreateTable /> */}
                 <EditColumn />
             </header>
         </div>
