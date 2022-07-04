@@ -1,0 +1,20 @@
+{
+    "name": "fb-ref-extension",
+    "version": "1.0.0",
+    "manifest_version": 2,
+    "description": "FB REF Extension",
+    "content_scripts": [
+      {
+        "matches": ["<all_urls>"],
+        "js": ["./main.js"],
+        "css": ["/main.css"]
+      }
+    ],
+    "browser_action": {
+      "default_popup": "./popup.html"
+    },
+    "permissions": ["storage"],
+    "host_permissions": [
+      "*://*/*"
+    ]
+  }
