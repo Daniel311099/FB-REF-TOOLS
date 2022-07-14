@@ -5,6 +5,7 @@ import ReactDOM from 'react-dom/client';
 import Menu from "./components/Menu";
 import ColumnSelector from "./components/ui-controls/ColumnSelector";
 import ColumnSelectorRow from "./components/ui-controls/ColumnSelectorRow";
+import { getTableIds, getTables } from "./local-api/api";
 
 import { connectDB } from "./local-api/database";
 import { a } from "./local-api/serializers";
@@ -12,13 +13,13 @@ console.log(a)
 // var database = require('./local-api/database.js')
 // var database = lazy(() => import('./local-api/database.js'))
 // var connectDB = database.connectDB
-// import main from "./local-api/main"; 
+// import main from "./local-api/main";
 
 const Listen = (props) => {
     const [message, setMessage] = useState("");
     const [currentUrl, setCurrentUrl] = useState("")
     const [selectedColumns, setSelectedColumns] = useState([])
-    const [tables, setTables] = useState([]) // store references to all tables on the page
+    const [tables, setTables] = useState({}) // store references to all tables on the page
     
     // define event listeners here
     // call handlers from scraper.js in callbacks
@@ -224,21 +225,25 @@ const Listen = (props) => {
         //     console.log(err)
         //     // try again
         // })
-        let response = await connectDB()
-        let content = await response.json()
-        if (content.success) {
-            // get latest data from idb and set state
-        } else {
-            // try again
-        }
+        // let response = await connectDB()
+        // let content = await response.json()
+        // if (content.success) {
+        //     // get latest data from idb and set state
+        // } else {
+        //     // try again
+        // }
+        const tables = getTables()
+        console.log(tables, 'tables')
+        // return tables
+        setTables(tables)
     }
     useEffect(() => {
         addUiControls();
-        // loadData()
+        loadData()
         // set url
     }, [])
     return (
-        <Menu message={message} />
+        <Menu message={message} tables={tables} />
         // <div></div>
     )
 }

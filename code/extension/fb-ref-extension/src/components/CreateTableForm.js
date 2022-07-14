@@ -7,7 +7,7 @@ const CreateTableForm = (props) => {
         <div>
             <form>
                 <label>
-                    Table Name:
+                    Table Name: <br/>
                     <input type="text" name="tableName" value={tableName} onChange={(e) => setTableName(e.target.value)} />
                 </label> <br />
                 <input type="submit" value="Create Table" />

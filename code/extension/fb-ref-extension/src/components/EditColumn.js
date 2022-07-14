@@ -38,10 +38,18 @@ const EditColumn = (props) => {
         //     // return calcedPlcs
         // }
         let out = calcPlcs()
-        props.setPlaceholders(out => out)
+        props.setPlaceholders(out)
         console.log(out, latex)
         // return out
     }, [latex])
+
+    const tempPlc = obj => {
+        let out = {}
+        Object.keys(obj).forEach(key => {
+            out[key] = obj[key].value
+            })
+        return out
+    }
 
     function getPlcs(p) { // p is the partial plc object that gets updated on each iteration
         console.log(p)
@@ -49,7 +57,7 @@ const EditColumn = (props) => {
             console.log(p)
             const fn = evaluatex(latex, {latex: true});
             // const result2 = fn(placeholders)
-            let result1 = fn(p)
+            let result1 = fn(tempPlc(p))
             console.log(result1)
             // setPlaceholders(p => p)
             return p
@@ -60,7 +68,11 @@ const EditColumn = (props) => {
                 const plc = splittedErr[2]
                 console.log(e.name, (e.message), plc)
                 let plcObj = p
-                plcObj[plc] = 2
+                // plcObj[plc] = 2
+                plcObj[plc] = {
+                    value: 2,
+                    name: ''
+                }
                 return getPlcs(plcObj)
             } else if (false) { // error is zero div or similar, add condition
                 console.log('zero div error')
@@ -71,20 +83,20 @@ const EditColumn = (props) => {
             }
         }
     }
-    let plcList = []
-    plcList = useMemo(() => {
-        console.log(placeholders)
-        return (
-            Object.keys(placeholders).map(plc => {
-                return (
-                    <li key={plc}>
-                        <h1>{plc}</h1>
-                        <input type="dropdown" />
-                    </li>
-                )
-            })
-        )
-    }, [placeholders])
+    // let plcList = []
+    // plcList = useMemo(() => {
+    //     console.log(placeholders)
+    //     return (
+    //         Object.keys(placeholders).map(plc => {
+    //             return (
+    //                 <li key={plc}>
+    //                     <h1>{plc}</h1>
+    //                     <input type="dropdown" />
+    //                 </li>
+    //             )
+    //         })
+    //     )
+    // }, [placeholders])
 
     // useEffect(() => {
     //     // let plcs = getPlcs(latex)
@@ -100,9 +112,9 @@ const EditColumn = (props) => {
                     setLatex(mathField.latex())
                 }}
             /> <br/>
-            <ul>
+            {/* <ul>
                 {plcList}
-            </ul>
+            </ul> */}
         </div>
     )
 }

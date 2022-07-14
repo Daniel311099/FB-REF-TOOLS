@@ -8,6 +8,7 @@ import EditColumn from "./EditColumn";
 
 import appStyles from '../App.css'
 import mathquillStyles from '../mathquill.css'
+import ColumnInput from "./ColumnInput";
 
 const Container = styled.div`
   color: red;
@@ -50,7 +51,12 @@ const Menu = (props) => {
     //     quillScript2.src = '../../mathquill-0.10.1/ajaxScript.js';
     // }, [])
 
-    
+
+    let ColumnInputList = Object.keys(placeholders).map((parameter, index) => {
+        return (
+            <ColumnInput key={index} name={parameter} tables={props.tables} />
+        )
+    })
 
     return (
         <ShadowRoot>
@@ -60,6 +66,7 @@ const Menu = (props) => {
                 <div style={mathquillStyles}>
                     <CreateTableForm /> <br />
                     <EditColumn placeholders={placeholders} setPlaceholders={setPlaceholders} />
+                    {ColumnInputList}
                 </div>
                 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mathquill/0.10.1/mathquill.css" />
             </Container>
