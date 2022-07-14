@@ -16,5 +16,8 @@
     "permissions": ["storage"],
     "host_permissions": [
       "*://*/*"
+    ],
+    "web_accessible_resources": [
+      "mathquill.js"
     ]
   }
