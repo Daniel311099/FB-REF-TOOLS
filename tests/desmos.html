@@ -1,0 +1,1640 @@
+<html no_gl="true" lang="en" class="dcg-calculator-api-container">
+
+    <head>
+
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="viewport"
+            content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0">
+        <!--chrome=1 enables chrome frame; IE=edge specifies that IE should run in the highest mode available to that version of IE.-->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+        <meta name="Description"
+            content="Explore math with our beautiful, free online graphing calculator. Graph functions, plot points, visualize algebraic equations, add sliders, animate graphs, and more.">
+
+        <meta name="twitter:card" content="summary_large_image">
+        <meta property="og:title" content="Desmos | Graphing Calculator">
+        <meta property="og:site_name" content="Desmos">
+        <meta property="og:image" content="https://s3.amazonaws.com/desmos/img/calc_thumb.png">
+        <link rel="image_src" href="https://s3.amazonaws.com/desmos/img/calc_thumb.png">
+
+
+
+
+
+        <link rel="canonical" href="https://www.desmos.com/calculator">
+
+
+
+        <link rel="alternate" hreflang="de" href="https://www.desmos.com/calculator?lang=de">
+
+
+
+        <link rel="alternate" hreflang="es" href="https://www.desmos.com/calculator?lang=es">
+
+
+
+        <link rel="alternate" hreflang="et" href="https://www.desmos.com/calculator?lang=et">
+
+
+
+        <link rel="alternate" hreflang="fr" href="https://www.desmos.com/calculator?lang=fr">
+
+
+
+        <link rel="alternate" hreflang="id" href="https://www.desmos.com/calculator?lang=id">
+
+
+
+        <link rel="alternate" hreflang="it" href="https://www.desmos.com/calculator?lang=it">
+
+
+
+        <link rel="alternate" hreflang="ja" href="https://www.desmos.com/calculator?lang=ja">
+
+
+
+        <link rel="alternate" hreflang="ko" href="https://www.desmos.com/calculator?lang=ko">
+
+
+
+        <link rel="alternate" hreflang="nl" href="https://www.desmos.com/calculator?lang=nl">
+
+
+
+        <link rel="alternate" hreflang="pl" href="https://www.desmos.com/calculator?lang=pl">
+
+
+
+        <link rel="alternate" hreflang="pt-BR" href="https://www.desmos.com/calculator?lang=pt-BR">
+
+
+
+        <link rel="alternate" hreflang="ru" href="https://www.desmos.com/calculator?lang=ru">
+
+
+
+        <link rel="alternate" hreflang="sv-SE" href="https://www.desmos.com/calculator?lang=sv-SE">
+
+
+
+        <link rel="alternate" hreflang="th" href="https://www.desmos.com/calculator?lang=th">
+
+
+
+        <link rel="alternate" hreflang="tr" href="https://www.desmos.com/calculator?lang=tr">
+
+
+
+        <link rel="alternate" hreflang="uk" href="https://www.desmos.com/calculator?lang=uk">
+
+
+
+        <link rel="alternate" hreflang="vi" href="https://www.desmos.com/calculator?lang=vi">
+
+
+
+        <link rel="alternate" hreflang="zh-CN" href="https://www.desmos.com/calculator?lang=zh-CN">
+
+
+
+        <link rel="alternate" hreflang="zh-TW" href="https://www.desmos.com/calculator?lang=zh-TW">
+
+
+
+        <link rel="alternate" hreflang="en" href="https://www.desmos.com/calculator">
+
+
+
+        <link rel="alternate" hreflang="x-default" href="https://www.desmos.com/calculator">
+
+
+
+
+        <link rel="stylesheet" href="calculator_desktop-c11c2a7251bf19405ad4f765ecda43a32cf19b16.css">
+
+        <title>Desmos | Graphing Calculator</title>
+
+        <link rel="apple-touch-icon-precomposed" href="/assets/img/apple-touch-icon-precomposed.png"> <!-- 57x57 -->
+        <link rel="apple-touch-icon-precomposed" sizes="72x72"
+            href="/assets/img/apple-touch-icon-72x72-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="76x76"
+            href="/assets/img/apple-touch-icon-76x76-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="114x114"
+            href="/assets/img/apple-touch-icon-114x114-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="120x120"
+            href="/assets/img/apple-touch-icon-120x120-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="144x144"
+            href="/assets/img/apple-touch-icon-144x144-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152"
+            href="/assets/img/apple-touch-icon-152x152-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="180x180"
+            href="/assets/img/apple-touch-icon-180x180-precomposed.png">
+        <link rel="icon" sizes="192x192" href="/assets/img/touch-icon-192x192.png"> <!-- for Chrome on Android -->
+        <link rel="icon" href="/favicon.ico" type="image/x-icon">
+
+        <style type="text/css">
+            body {
+                font-family: Arial, sans-serif;
+            }
+
+            @-moz-keyframes dcg-loading-pulse {
+                0% {
+                    opacity: 0;
+                }
+
+                20% {
+                    opacity: 1;
+                }
+
+                80% {
+                    opacity: 0;
+                    -moz-transform: scale(1.5, 1.5);
+                }
+
+                100% {
+                    opacity: 0;
+                    -moz-transform: scale(1.5, 1.5);
+                }
+            }
+
+            @-webkit-keyframes dcg-loading-pulse {
+                0% {
+                    opacity: 0;
+                }
+
+                20% {
+                    opacity: 1;
+                }
+
+                80% {
+                    opacity: 0;
+                    -webkit-transform: scale(1.5, 1.5);
+                }
+
+                100% {
+                    opacity: 0;
+                    -webkit-transform: scale(1.5, 1.5);
+                }
+            }
+
+            @-o-keyframes dcg-loading-pulse {
+                0% {
+                    opacity: 0;
+                }
+
+                20% {
+                    opacity: 1;
+                }
+
+                80% {
+                    opacity: 0;
+                    -o-transform: scale(1.5, 1.5);
+                }
+
+                100% {
+                    opacity: 0;
+                    -o-transform: scale(1.5, 1.5);
+                }
+            }
+
+            @keyframes dcg-loading-pulse {
+                0% {
+                    opacity: 0;
+                }
+
+                20% {
+                    opacity: 1;
+                }
+
+                80% {
+                    opacity: 0;
+                    transform: scale(1.5, 1.5);
+                }
+
+                100% {
+                    opacity: 0;
+                    transform: scale(1.5, 1.5);
+                }
+            }
+
+            .dcg-loading-div-container {
+                position: absolute;
+                left: 0;
+                right: 0;
+                top: 0;
+                bottom: 0;
+                background: #FFF;
+                z-index: 1000;
+            }
+
+            .dcg-loading-background-div {
+                animation: dcg-loading-pulse 2.2s infinite;
+                left: 50%;
+                background: #eee;
+                width: 140px;
+                height: 140px;
+                display: inline-block;
+                moz-animation: dcg-loading-pulse 2.2s infinite;
+                ms-animation: dcg-loading-pulse 2.2s infinite;
+                o-animation: dcg-loading-pulse 2.2s infinite;
+                webkit-animation: dcg-loading-pulse 2.2s infinite;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                margin-left: -70px;
+                margin-top: -70px;
+                border-radius: 50%;
+                -webkit-border-radius: 50%;
+                -moz-border-radius: 50%;
+                -ms-border-radius: 50%;
+                -o-border-radius: 50%;
+            }
+
+            .dcg-loading-div {
+                color: #fff;
+                font-size: 18px;
+                left: 50%;
+                width: 140px;
+                height: 140px;
+                display: inline-block;
+                text-align: center;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                color: transparent;
+                margin-left: -70px;
+                margin-top: -70px;
+                border-radius: 50%;
+                -webkit-border-radius: 50%;
+                -moz-border-radius: 50%;
+                -ms-border-radius: 50%;
+                -o-border-radius: 50%;
+                background: no-repeat center center;
+                background-size: 120px 25px;
+                filter: grayscale(100%);
+                opacity: 0.75;
+                background-image: url(data:image/png;base64,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);
+            }
+
+        </style>
+
+    </head>
+
+    <body data-load-data="{&quot;seed&quot;:&quot;3651a446c78940158dd10f5d8c947cce&quot;}" data-country="GB"
+        class="dcg-tap-container touchtracking_id_1">
+
+        <div class="dcg-loading-div-container" style="display: none;">
+            <div class="dcg-loading-background-div"></div>
+            <div class="dcg-loading-div">Loading...</div>
+        </div>
+
+
+        <!-- GRAPHER -->
+        <div class="dcg-sliding-interior">
+            <!-- this will contain all of the menus and the graph -->
+            <div id="dcg-header-container">
+                <div>
+                    <div class="dcg-header">
+                        <div class="dcg-header-desktop">
+                            <div class="align-left-container"><span role="button" tabindex="0"
+                                    aria-label="Open Graph (cmd+o)"
+                                    class="dcg-header-btn dcg-action-opendrawer dcg-tooltip"
+                                    tooltip="Open Graph (cmd+o)" ontap="">
+                                    <div class="dcg-tooltip-hit-area-container" handleevent="true" ontap=""><i
+                                            class="dcg-icon-hamburger" aria-hidden="true"></i></div>
+                                </span><span class="title-div"><span role="button" class="dcg-variable-title-container"
+                                        tabindex="0" ontap="" aria-haspopup="false" aria-expanded="false"><span
+                                            class="dcg-variable-title dcg-tooltip">Untitled Graph</span>
+                                        <div style="display: none"></div>
+                                    </span>
+                                    <div style="display: none"></div>
+                                </span></div>
+                            <div class="align-center-container"><a href="/" target="_blank" class="dcg-home-link"><span>
+                                        <svg version="1.1" class="dcg-desmos-svg-logo" id="svg-desmos"
+                                            xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                            viewBox="0 0 909.3 188.4" style="enable-background:new 0 0 909.3 188.4;"
+                                            xml:space="preserve">
+                                            <title>Desmos Logo</title>
+                                            <g>
+                                                <path d="M129.6,0c-6.8,0-12.4,5.5-12.4,12.4v48c-27.7-25.4-70.6-24-96.7,3.1c-27.4,28.4-27.4,73.4,0,101.8
+          c26.1,27.1,69.1,28.4,96.8,3v8.8c2,6.5,9,10.2,15.5,8.2c3.9-1.2,7-4.3,8.2-8.2V12.4C141.1,5.9,136.1,0.5,129.6,0z M103.9,148.7
+          c-17.3,18.2-46.1,18.9-64.3,1.6c-0.6-0.5-1.1-1.1-1.6-1.6c-18.4-19.2-18.4-49.5,0-68.7c17.3-18.2,46.1-18.9,64.3-1.6
+          c0.6,0.5,1.1,1.1,1.6,1.6C122.3,99.3,122.3,129.6,103.9,148.7z"></path>
+                                                <path d="M298.3,124c2.2-2.3,3.4-5.3,3.5-8.4c-0.1-19-7.6-37.2-20.9-50.7c-26.6-27.6-70.6-28.4-98.2-1.8c-0.6,0.6-1.2,1.2-1.8,1.8
+          c-27.4,28.4-27.4,73.4,0,101.8c21.8,22.6,56.2,27.7,83.7,12.4c10-5.6,18.5-13.5,24.8-23.1c3.4-5.5,1.9-12.7-3.3-16.5
+          c-5.5-3.3-12.6-1.7-16.4,3.5c-4.2,6.4-9.9,11.6-16.6,15.4c-6.8,3.8-14.4,5.8-22.2,5.8c-12.5,0-24.4-5.1-33.1-14.1
+          c-6-6.3-10.3-14-12.4-22.4h104C292.7,127.6,296,126.3,298.3,124z M231.3,67.2c12.4,0.1,24.3,5.2,33,14.1
+          c6.1,6.3,10.4,14.1,12.4,22.6h-90.7c2.1-8.5,6.3-16.3,12.4-22.6C207,72.4,218.8,67.3,231.3,67.2z"></path>
+                                                <path d="M763.5,63c-26.7-28.1-71.1-29.2-99.2-2.5c-0.8,0.8-1.7,1.6-2.5,2.5c-13.7,13.9-21.3,32.7-20.9,52.2
+          c-0.2,19.3,7.2,37.8,20.7,51.6c27.7,28.2,73.1,28.7,101.3,0.9c0.3-0.3,0.6-0.6,0.9-0.9c13.4-13.8,20.9-32.4,20.7-51.7
+          c0.2-19.4-7.3-38.2-21.1-51.9 M712.8,66.7c12.4,0,24.2,5.2,32.5,14.4c8.9,9.2,13.8,21.5,13.6,34.3c0.2,12.7-4.6,25-13.5,34.1
+          c-8.5,9.2-20.5,14.2-33,13.9c-12.3,0.3-24.2-4.7-32.5-13.8c-8.8-9.1-13.6-21.4-13.3-34.1c-0.3-12.9,4.7-25.4,13.8-34.6
+          c8.2-9.3,20-14.6,32.4-14.4"></path>
+                                                <path d="M623.8,92.6v81.9c0.3,6.8-4.9,12.7-11.8,13c-6.8,0.3-12.7-4.9-13-11.8V93.1c0-7.5-3-14.6-8.3-19.8
+          c-4.3-4.7-10.2-7.6-16.5-8.1h-1.9c-7-0.1-13.6,2.9-18.2,8.2c-4.8,4.9-7.5,11.5-7.7,18.3v2l0,0v81.1c0,6.8-5.5,12.4-12.4,12.4
+          c-6.5,0-11.9-4.9-12.4-11.4V91.5c-0.6-4.3-1.8-8.4-3.5-12.4c-1.2-2.3-2.6-4.5-4.3-6.4c-4.7-5.2-11.3-8.3-18.3-8.3
+          c-7,0-13.6,3-18.1,8.3c-5.1,5.2-8,12.3-7.9,19.6V176c-0.8,6.3-6.1,11-12.4,10.9c-6.8,0-12.4-5.5-12.4-12.4V52.9
+          c-0.7-6.8,4.2-12.9,11-13.6c5.9-0.6,11.4,3,13.1,8.7l2.9-1.9c7.4-3.9,15.6-6,23.9-5.9c12.3-0.1,24.1,4.3,33.3,12.4
+          c1.1,0.9,2.1,2,3,3.1c0.9,0.7,1.7,1.5,2.5,2.4l2.2-2.4c0.9-1.1,1.9-2.2,3-3.1c9.2-8.1,21-12.5,33.2-12.4h4.3
+          c10.8,0.8,21,5.1,29,12.4c0.9,1,2,1.9,3,2.9C618.9,65.3,624,78.7,623.8,92.6"></path>
+                                                <path d="M427.2,145.4c0.1,23.4-18.6,42.5-42,43h-50.8c-6.8,0-12.4-5.5-12.4-12.4s5.5-12.4,12.4-12.4H384c10-0.2,17.9-8.4,17.8-18.3
+          c0.1-9.9-7.9-18-17.8-18.1c0,0-0.1,0-0.1,0h-24.8c-23.8-1.3-42-21.6-40.8-45.4c1.2-22,18.8-39.6,40.8-40.8h50.2
+          c6.8,0,12.4,5.5,12.4,12.4s-5.5,12.4-12.4,12.4h-49.1c-10,0.8-17.5,9.6-16.7,19.7c0.7,8.9,7.8,15.9,16.7,16.7H385
+          c5.9,0,11.8,1.2,17.2,3.7C417.7,112.8,427.2,128.4,427.2,145.4"></path>
+                                                <path d="M908.9,145.2c0,23.4-18.3,42.7-41.6,43.3h-50.8c-6.8,0-12.4-5.5-12.4-12.4s5.5-12.4,12.4-12.4h50.2
+          c10-0.2,17.9-8.4,17.8-18.3c0.1-9.9-7.9-18-17.8-18.1c0,0-0.1,0-0.1,0h-24.8c-23.8-1.3-42-21.6-40.8-45.4
+          c1.2-22,18.8-39.6,40.8-40.8h49.6c6.8,0,12.4,5.5,12.4,12.4s-5.5,12.4-12.4,12.4h-49.6c-10.1,0-18.2,8.2-18.2,18.2c0,0,0,0,0,0
+          c0,9.9,8,18,17.8,18.1h24.8c5.9,0,11.8,1.3,17.2,3.7C898.9,112.8,908.9,128.2,908.9,145.2"></path>
+                                            </g>
+                                        </svg>
+                                    </span></a></div>
+                            <div class="dcg-toast-view">
+                                <div style="display: none"></div>
+                            </div>
+                            <div style="display: none"></div>
+                            <div class="align-right-container"><span>
+                                    <div style="display: none"></div><span class="dcg-login"><a role="link" tabindex="0"
+                                            class="dcg-sign-in dcg-action-login dcg-btn-white-outline" ontap="">Log
+                                            In</a>or<a role="link" tabindex="0"
+                                            class="dcg-create-account dcg-btn dcg-btn-primary dcg-dark-background dcg-action-createaccount"
+                                            ontap="">Sign Up</a></span>
+                                </span>
+                                <div style="display: none"></div>
+                                <div class="dcg-tooltip-hit-area-container" handleevent="true" ontap=""><span
+                                        role="button" tabindex="0" aria-haspopup="true" aria-label="share"
+                                        aria-expanded="false" class="dcg-header-btn dcg-action-share dcg-tooltip"
+                                        dcg-menu-button="share" ontap=""><i class="dcg-icon-share"
+                                            aria-hidden="true"></i></span></div>
+                                <div class="dcg-tooltip-hit-area-container" handleevent="true" ontap=""><span
+                                        role="button" tabindex="0" aria-haspopup="true" aria-label="Help"
+                                        aria-expanded="false" class="dcg-header-btn dcg-action-help dcg-tooltip"
+                                        dcg-menu-button="help" ontap=""><i class="dcg-icon-question-sign"
+                                            aria-hidden="true"></i></span></div>
+                                <div class="dcg-tooltip-hit-area-container" handleevent="true" ontap=""><span
+                                        role="button" tabindex="0" aria-haspopup="true" aria-label="Language"
+                                        aria-expanded="false" class="dcg-header-btn dcg-action-language dcg-tooltip"
+                                        dcg-menu-button="language" ontap=""><i class="dcg-icon-world"
+                                            aria-hidden="true"></i></span></div>
+                            </div>
+                        </div>
+                        <div style="display: none"></div>
+                    </div><span></span>
+                </div>
+            </div>
+            <div id="graph-container">
+                <div class="dcg-wrapper" style="width: 100%; height: 100%;">
+                    <div class="dcg-calculator-api-container" style="width: 100%; height: 100%; position: relative;">
+                        <div class="dcg-container dcg-is-interactive dcg-tap-container touchtracking_id_1"
+                            style="font-size:16px;background:#ffffff;color:#000000" role="application"
+                            aria-label="Desmos Graphing Calculator" x-ms-format-detection="none">
+                            <div class="">
+                                <div class="dcg-exppanel-outer"
+                                    style="position:absolute;left:0px;top:0px;width:448px;height:309px">
+                                    <div style="display: none"></div>
+                                    <div class="dcg-exppanel-container dcg-add-shadow" style="">
+                                        <div class="dcg-expression-top-bar" role="toolbar" aria-label="Expression Bar"
+                                            style="">
+                                            <div class="dcg-left-buttons"><span
+                                                    class="dcg-action-opendrawer dcg-tooltip dcg-icon-btn dcg-in-api-action-opendrawer"
+                                                    handleevent="true" tooltip="Open Graph (ctrl+o)" role="button"
+                                                    tabindex="0" aria-label="Open Graph" ontap=""><i
+                                                        class="dcg-icon-hamburger" aria-hidden="true"></i></span>
+                                                <div class="dcg-add-expression-container">
+                                                    <div class="dcg-tooltip-hit-area-container" handleevent="true"
+                                                        ontap=""><span
+                                                            class="dcg-icon-btn dcg-add-expression-btn dcg-action-add-expression dcg-do-blur"
+                                                            handleevent="true" role="button" tabindex="0"
+                                                            aria-haspopup="true" aria-expanded="false"
+                                                            aria-label="Add Item" ontap=""><i class="dcg-icon-plus"
+                                                                aria-hidden="true"></i></span></div>
+                                                    <div style="display: none"></div>
+                                                </div>
+                                                <div style="display: none"></div>
+                                                <div style="display: none"></div>
+                                                <div style="display: none"></div>
+                                            </div>
+                                            <div class="dcg-center-buttons">
+                                                <div class="dcg-tooltip-hit-area-container" handleevent="true" ontap="">
+                                                    <span class="dcg-action-undo dcg-icon-btn" role="button"
+                                                        tabindex="0" aria-label="Undo" ontap="" aria-disabled="false"><i
+                                                            class="dcg-icon-undo" aria-hidden="true"></i></span></div>
+                                                <div class="dcg-tooltip-hit-area-container" handleevent="true" ontap="">
+                                                    <span class="dcg-action-redo dcg-icon-btn dcg-disabled"
+                                                        role="button" tabindex="-1" aria-label="Redo" ontap=""
+                                                        aria-disabled="true"><i class="dcg-icon-redo"
+                                                            aria-hidden="true"></i></span></div>
+                                            </div>
+                                            <div class="dcg-right-buttons">
+                                                <div class="dcg-tooltip-hit-area-container" handleevent="true" ontap="">
+                                                    <span class="dcg-icon-btn dcg-action-toggle-edit" handleevent="true"
+                                                        role="button" tabindex="0" aria-label="Edit Expression List"
+                                                        ontap=""><i class="dcg-icon-settings"
+                                                            aria-hidden="true"></i></span></div>
+                                                <div style="display: none"></div>
+                                                <div class="dcg-tooltip-hit-area-container" handleevent="true" ontap="">
+                                                    <span
+                                                        class="dcg-resize-list-btn dcg-action-hideexpressions dcg-icon-btn"
+                                                        role="button" tabindex="0" aria-label="Hide Expression List"
+                                                        ontap=""><i class="dcg-icon-hide" aria-hidden="true"></i></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div style="display: none"></div>
+                                        <div style="display: none"></div>
+                                        <div class="dcg-exppanel dcg-disable-horizontal-scroll-to-cursor"
+                                            style="background:#ffffff">
+                                            
+                                            <div class="dcg-expressionlist" role="complementary"
+                                                aria-label="Expression list"><span class="dcg-template-expressioneach">
+                                                    <div class="dcg-do-not-blur dcg-expressionitem dcg-mathitem"
+                                                        expr-id="1">
+                                                        <div class="dcg-fade-container" ontap="">
+                                                            <div class="dcg-main">
+                                                                <div class="dcg-mathquill-wrapper">
+                                                                    <div style="display: none"></div>
+                                                                    <div class="dcg-typeset-math" style=""
+                                                                        aria-hidden="false">
+                                                                        <div
+                                                                            class="dcg-expression-mathquill dcg-mq-editable-field dcg-mq-math-mode">
+                                                                            <span class="dcg-mq-aria-alert"
+                                                                                aria-live="assertive"
+                                                                                aria-atomic="true">"y" equals 2 "x"
+                                                                                squared minus 3</span><span
+                                                                                class="dcg-mq-textarea"><textarea
+                                                                                    aria-label="Expression 1: &quot;y&quot; equals 2 &quot;x&quot; squared minus 3  Has graph. To audio trace, press OPTION+T."></textarea></span><span
+                                                                                class="dcg-mq-root-block"
+                                                                                aria-hidden="true"><var>y</var><span>&nbsp;</span><span
+                                                                                    class="dcg-mq-binary-operator">=</span><span>&nbsp;</span><span
+                                                                                    class="dcg-mq-digit">2</span><var>x</var><span
+                                                                                    class="dcg-mq-supsub dcg-mq-non-leaf dcg-mq-sup-only"><span
+                                                                                        class="dcg-mq-sup"><span
+                                                                                            class="dcg-mq-digit">2</span></span></span><span
+                                                                                    class="dcg-mq-binary-operator">−</span><span
+                                                                                    class="dcg-mq-digit">3</span></span>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div style="display: none"></div>
+                                                            </div><i class="dcg-icon-remove dcg-top-level-delete"
+                                                                handleevent="true" ontap="" aria-hidden="true"></i>
+                                                            <div style="display: none"></div>
+                                                            <div style="display: none"></div>
+                                                        </div><span
+                                                            class="dcg-tab dcg-action-drag dcg-action-icon-touch"
+                                                            handleevent="true" tapboundary="true" disablescroll="true"
+                                                            style="touch-action:none"><span class="dcg-num">1</span>
+                                                            <div class="dcg-tab-interior dcg-action-icon-mouse">
+                                                                <div class="dcg-expression-icon-container">
+                                                                    <div class="dcg-circular-icon-container"
+                                                                        role="button" tabindex="0"
+                                                                        dcg-open-menu-guid="abstract_item_1"
+                                                                        aria-label="Hide Expression" ontap=""><span
+                                                                            class="dcg-do-not-blur dcg-circular-icon dcg-colored-icon"
+                                                                            style="background:#c74440">
+                                                                            <div style="display: none"></div>
+                                                                            <div style="display: none"></div><i
+                                                                                class="dcg-icon-parametric-solid dcg-layered-icon"
+                                                                                style="color:"></i>
+                                                                            <div style="display: none"></div>
+                                                                        </span></div>
+                                                                </div>
+                                                            </div>
+                                                            <div style="display: none"></div>
+                                                        </span>
+                                                        <div style="display: none"></div>
+                                                    </div>
+                                                    <div class="dcg-do-not-blur dcg-expressionitem dcg-mathitem dcg-selected"
+                                                        expr-id="2">
+                                                        <div class="dcg-fade-container" ontap="">
+                                                            <div class="dcg-main">
+                                                                <div class="dcg-mathquill-wrapper">
+                                                                    <div style="display: none"></div>
+                                                                    <div class="dcg-typeset-math" style=""
+                                                                        aria-hidden="false">
+                                                                        <div
+                                                                            class="dcg-expression-mathquill dcg-mq-editable-field dcg-mq-math-mode">
+                                                                            <span class="dcg-mq-textarea"><textarea
+                                                                                    aria-label="Expression 2:"></textarea></span><span
+                                                                                class="dcg-mq-root-block dcg-mq-empty"
+                                                                                aria-hidden="true"></span></div>
+                                                                    </div>
+                                                                </div>
+                                                                <div style="display: none"></div>
+                                                            </div><i class="dcg-icon-remove dcg-top-level-delete"
+                                                                handleevent="true" ontap="" aria-hidden="true"></i>
+                                                            <div style="display: none"></div>
+                                                            <div style="display: none"></div>
+                                                        </div><span
+                                                            class="dcg-tab dcg-action-drag dcg-action-icon-touch"
+                                                            handleevent="true" tapboundary="true" disablescroll="true"
+                                                            style="touch-action:none"><span class="dcg-num">2</span>
+                                                            <div class="dcg-tab-interior dcg-action-icon-mouse">
+                                                                <div class="dcg-expression-icon-container"><span></span>
+                                                                </div>
+                                                            </div>
+                                                            <div style="display: none"></div>
+                                                        </span>
+                                                        <div style="display: none"></div>
+                                                    </div>
+                                                </span>
+                                                <div class="dcg-expressionitem dcg-new-expression dcg-opened">
+                                                    <div class="dcg-new-math-div dcg-do-not-blur dcg-action-newmath"
+                                                        ontap="">
+                                                        <div class="dcg-new-expression-fade"></div>
+                                                    </div><span class="dcg-tab"><span
+                                                            class="dcg-num dcg-variable-index">3</span>
+                                                        <div class="dcg-tab-interior"></div>
+                                                    </span>
+                                                </div>
+                                                <div style="display: none"></div>
+                                                <div class="dcg-expressions-branding" style="opacity:1">
+                                                    <div style="display: none"></div><span class="dcg-noedit-branding">
+                                                        <div class="dcg-powered-by" aria-label="Powered by Desmos">
+                                                            powered by</div><i class="dcg-icon-desmos"
+                                                            aria-hidden="true"></i>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            
+
+                                        </div>
+                                    </div>
+                                    <div class="dcg-exp-list-resizer"></div>
+                                </div><span></span>
+                            </div> -->
+                            <div style="display: none"></div>
+                            <div style="display: none"></div>
+                            <div>
+                                <div class="dcg-pillbox-container" role="group" aria-label="Graph Settings Controls">
+                                    <div class="dcg-overgraph-pillbox-elements" style="bottom: auto">
+                                        <div class="dcg-settings-view-container">
+                                            <div class="dcg-tooltip-hit-area-container" handleevent="true" ontap="">
+                                                <div class="dcg-btn-flat-gray dcg-settings-pillbox dcg-action-settings"
+                                                    role="button" tabindex="0" aria-haspopup="true"
+                                                    aria-expanded="false" aria-label="Graph Settings" ontap=""
+                                                    style="background:#ededed"><i class="dcg-icon-wrench"
+                                                        aria-hidden="true"></i>
+                                                    <div style="display: none"></div>
+                                                </div>
+                                            </div>
+                                            <div style="display: none"></div>
+                                        </div>
+                                        <div style="display: none"></div>
+                                        <div class="dcg-zoom-container">
+                                            <div class="dcg-zoominout-pillbox dcg-btn-flat-gray dcg-btn-flat-gray-group"
+                                                style="background:#ededed">
+                                                <div class="dcg-tooltip-hit-area-container" handleevent="true" ontap="">
+                                                    <div class="dcg-action-zoomin" role="button" tabindex="0"
+                                                        aria-label="Zoom In" ontap="" style="background:#ededed"><i
+                                                            class="dcg-icon dcg-icon-plus" aria-hidden="true"></i></div>
+                                                </div>
+                                                <div class="dcg-tooltip-hit-area-container" handleevent="true" ontap="">
+                                                    <div class="dcg-option dcg-action-zoomout dcg-tooltip-e"
+                                                        tooltip="Zoom Out" role="button" tabindex="0"
+                                                        aria-label="Zoom Out" ontap="" style="background:#ededed"><i
+                                                            class="dcg-icon dcg-icon-minus" aria-hidden="true"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="dcg-tooltip-hit-area-container" handleevent="true" ontap="">
+                                                <div class="dcg-btn-flat-gray dcg-option dcg-action-zoomrestore dcg-disabled"
+                                                    role="button" tabindex="0" aria-label="Restore Default Zoom"
+                                                    ontap="" style="background:#ededed" aria-disabled="true"><i
+                                                        class="dcg-icon dcg-icon-home" aria-hidden="true"></i></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="dcg-graphpaper-branding dcg-unclickable"><span class="dcg-powered-by"
+                                        aria-label="Powered by Desmos">powered by</span><i class="dcg-icon-desmos"
+                                        aria-hidden="true"></i></div>
+                            </div> -->
+                            <div class="dcg-toast-view">
+                                <div style="display: none"></div>
+                            </div>
+                            <div class="dcg-grapher"
+                                style="overflow: hidden; width: 992px; position: absolute; left: 448px; top: 0px; height: 309px;">
+                                <div class="dcg-graph-outer" role="img" aria-roledescription="graph paper"
+                                    aria-hidden="false" tabindex="0"
+                                    aria-label="Graph paper showing 1 graph. Press OPTION+T for audio trace."><canvas
+                                        class="dcg-graph-inner" width="1984" height="618"
+                                        style="position: relative; display: block; width: 992px; height: 309px;"></canvas>
+                                </div>
+                                <div>
+                                    <div class="dcg-graph-outer" style="z-index:0"></div>
+                                </div>
+                                <div>
+                                    <div class="dcg-graph-outer" style="z-index:0"></div>
+                                </div>
+                                <div>
+                                    <div class="dcg-graph-outer" style="z-index:0"></div>
+                                </div>
+                                <div class="">
+                                    <div class="dcg-graph-outer" style="z-index:0"></div>
+                                </div>
+                            </div>
+                            <!-- <div class="dcg-keypad" role="complementary" aria-label="Keypad">
+                                <div class="dcg-keys-container"
+                                    style="transition:transform .3s, opacity .3s;opacity:0;transform:translate3d(0, 255px, 0)"
+                                    aria-hidden="true">
+                                    <div class="dcg-keys-background dcg-do-not-blur" style="background:#ededed">
+                                        <div class="dcg-keys">
+                                            <div class="dcg-basic-keypad dcg-do-not-blur">
+                                                <div class="dcg-keypad-row">
+                                                    <div class="dcg-keypad-btn-container" style="flex-grow:1"><span
+                                                            role="button" class="dcg-keypad-btn dcg-btn-light-on-gray"
+                                                            dcg-command="boldX" aria-label="boldX" ontap=""><span
+                                                                class="dcg-keypad-btn-content">
+                                                                <div class="dcg-mq-math-mode dcg-static-mathquill-view">
+                                                                    <span class="dcg-mq-mathspeak">"x"</span><span
+                                                                        class="dcg-mq-root-block"
+                                                                        aria-hidden="true"><var>x</var></span></div>
+                                                            </span></span></div>
+                                                    <div class="dcg-keypad-btn-container" style="flex-grow:1"><span
+                                                            role="button" class="dcg-keypad-btn dcg-btn-light-on-gray"
+                                                            dcg-command="boldY" aria-label="boldY" ontap=""><span
+                                                                class="dcg-keypad-btn-content">
+                                                                <div class="dcg-mq-math-mode dcg-static-mathquill-view">
+                                                                    <span class="dcg-mq-mathspeak">"y"</span><span
+                                                                        class="dcg-mq-root-block"
+                                                                        aria-hidden="true"><var>y</var></span></div>
+                                                            </span></span></div>
+                                                    <div class="dcg-keypad-btn-container" style="flex-grow:1"><span
+                                                            role="button" class="dcg-keypad-btn dcg-btn-light-on-gray"
+                                                            dcg-command="a^2" aria-label="Squared" ontap=""><span
+                                                                class="dcg-keypad-btn-content">
+                                                                <div class="dcg-mq-math-mode dcg-static-mathquill-view">
+                                                                    <span class="dcg-mq-mathspeak">"a"
+                                                                        squared</span><span class="dcg-mq-root-block"
+                                                                        aria-hidden="true"><var>a</var><span
+                                                                            class="dcg-mq-supsub dcg-mq-non-leaf dcg-mq-sup-only"><span
+                                                                                class="dcg-mq-sup"><span
+                                                                                    class="dcg-mq-digit">2</span></span></span></span>
+                                                                </div>
+                                                            </span></span></div>
+                                                    <div class="dcg-keypad-btn-container" style="flex-grow:1"><span
+                                                            role="button" class="dcg-keypad-btn dcg-btn-light-on-gray"
+                                                            dcg-command="a^b" aria-label="Superscript" ontap=""><span
+                                                                class="dcg-keypad-btn-content">
+                                                                <div class="dcg-mq-math-mode dcg-static-mathquill-view">
+                                                                    <span class="dcg-mq-mathspeak">"a" Superscript, "b"
+                                                                        , Baseline</span><span class="dcg-mq-root-block"
+                                                                        aria-hidden="true"><var>a</var><span
+                                                                            class="dcg-mq-supsub dcg-mq-non-leaf dcg-mq-sup-only"><span
+                                                                                class="dcg-mq-sup"><var>b</var></span></span></span>
+                                                                </div>
+                                                            </span></span></div>
+                                                    <div style="flex-grow:0.5"></div>
+                                                    <div class="dcg-keypad-btn-container" style="flex-grow:1"><span
+                                                            role="button" class="dcg-keypad-btn dcg-btn-dark-on-gray"
+                                                            dcg-command="7" aria-label="7" ontap=""><span
+                                                                class="dcg-keypad-btn-content">
+                                                                <div class="dcg-mq-math-mode dcg-static-mathquill-view">
+                                                                    <span class="dcg-mq-mathspeak">7</span><span
+                                                                        class="dcg-mq-root-block"
+                                                                        aria-hidden="true"><span
+                                                                            class="dcg-mq-digit">7</span></span></div>
+                                                            </span></span></div>
+                                                    <div class="dcg-keypad-btn-container" style="flex-grow:1"><span
+                                                            role="button" class="dcg-keypad-btn dcg-btn-dark-on-gray"
+                                                            dcg-command="8" aria-label="8" ontap=""><span
+                                                                class="dcg-keypad-btn-content">
+                                                                <div class="dcg-mq-math-mode dcg-static-mathquill-view">
+                                                                    <span class="dcg-mq-mathspeak">8</span><span
+                                                                        class="dcg-mq-root-block"
+                                                                        aria-hidden="true"><span
+                                                                            class="dcg-mq-digit">8</span></span></div>
+                                                            </span></span></div>
+                                                    <div class="dcg-keypad-btn-container" style="flex-grow:1"><span
+                                                            role="button" class="dcg-keypad-btn dcg-btn-dark-on-gray"
+                                                            dcg-command="9" aria-label="9" ontap=""><span
+                                                                class="dcg-keypad-btn-content">
+                                                                <div class="dcg-mq-math-mode dcg-static-mathquill-view">
+                                                                    <span class="dcg-mq-mathspeak">9</span><span
+                                                                        class="dcg-mq-root-block"
+                                                                        aria-hidden="true"><span
+                                                                            class="dcg-mq-digit">9</span></span></div>
+                                                            </span></span></div>
+                                                    <div class="dcg-keypad-btn-container" style="flex-grow:1"><span
+                                                            role="button" class="dcg-keypad-btn dcg-btn-light-on-gray"
+                                                            dcg-command="/" aria-label="Divide" ontap=""><span
+                                                                class="dcg-keypad-btn-content">
+                                                                <div class="dcg-mq-math-mode dcg-static-mathquill-view">
+                                                                    <span class="dcg-mq-mathspeak">over</span><span
+                                                                        class="dcg-mq-root-block"
+                                                                        aria-hidden="true"><span
+                                                                            class="dcg-mq-binary-operator">÷</span></span>
+                                                                </div>
+                                                            </span></span></div>
+                                                    <div style="flex-grow:0.5"></div>
+                                                    <div class="dcg-keypad-btn-container" style="flex-grow:2"><span
+                                                            role="button" class="dcg-keypad-btn dcg-btn-dark-on-gray"
+                                                            dcg-command="functions" aria-label="Functions"
+                                                            ontap=""><span
+                                                                class="dcg-keypad-btn-content">functions</span></span>
+                                                    </div>
+                                                </div>
+                                                <div class="dcg-keypad-row">
+                                                    <div class="dcg-keypad-btn-container" style="flex-grow:1"><span
+                                                            role="button" class="dcg-keypad-btn dcg-btn-light-on-gray"
+                                                            dcg-command="(" aria-label="Left Parenthesis" ontap=""><span
+                                                                class="dcg-keypad-btn-content">
+                                                                <div class="dcg-mq-math-mode dcg-static-mathquill-view">
+                                                                    <span class="dcg-mq-mathspeak">(</span><span
+                                                                        class="dcg-mq-root-block"
+                                                                        aria-hidden="true"><span>(</span></span></div>
+                                                            </span></span></div>
+                                                    <div class="dcg-keypad-btn-container" style="flex-grow:1"><span
+                                                            role="button" class="dcg-keypad-btn dcg-btn-light-on-gray"
+                                                            dcg-command=")" aria-label="Right Parenthesis"
+                                                            ontap=""><span class="dcg-keypad-btn-content">
+                                                                <div class="dcg-mq-math-mode dcg-static-mathquill-view">
+                                                                    <span class="dcg-mq-mathspeak">)</span><span
+                                                                        class="dcg-mq-root-block"
+                                                                        aria-hidden="true"><span>)</span></span></div>
+                                                            </span></span></div>
+                                                    <div class="dcg-keypad-btn-container" style="flex-grow:1"><span
+                                                            role="button" class="dcg-keypad-btn dcg-btn-light-on-gray"
+                                                            dcg-command="<" aria-label="<" ontap=""><span
+                                                                class="dcg-keypad-btn-content">
+                                                                <div class="dcg-mq-math-mode dcg-static-mathquill-view">
+                                                                    <span class="dcg-mq-mathspeak">less than</span><span
+                                                                        class="dcg-mq-root-block"
+                                                                        aria-hidden="true"><span
+                                                                            class="dcg-mq-binary-operator">&lt;</span></span>
+                                                                </div>
+                                                            </span></span></div>
+                                                    <div class="dcg-keypad-btn-container" style="flex-grow:1"><span
+                                                            role="button" class="dcg-keypad-btn dcg-btn-light-on-gray"
+                                                            dcg-command=">" aria-label=">" ontap=""><span
+                                                                class="dcg-keypad-btn-content">
+                                                                <div class="dcg-mq-math-mode dcg-static-mathquill-view">
+                                                                    <span class="dcg-mq-mathspeak">greater
+                                                                        than</span><span class="dcg-mq-root-block"
+                                                                        aria-hidden="true"><span
+                                                                            class="dcg-mq-binary-operator">&gt;</span></span>
+                                                                </div>
+                                                            </span></span></div>
+                                                    <div style="flex-grow:0.5"></div>
+                                                    <div class="dcg-keypad-btn-container" style="flex-grow:1"><span
+                                                            role="button" class="dcg-keypad-btn dcg-btn-dark-on-gray"
+                                                            dcg-command="4" aria-label="4" ontap=""><span
+                                                                class="dcg-keypad-btn-content">
+                                                                <div class="dcg-mq-math-mode dcg-static-mathquill-view">
+                                                                    <span class="dcg-mq-mathspeak">4</span><span
+                                                                        class="dcg-mq-root-block"
+                                                                        aria-hidden="true"><span
+                                                                            class="dcg-mq-digit">4</span></span></div>
+                                                            </span></span></div>
+                                                    <div class="dcg-keypad-btn-container" style="flex-grow:1"><span
+                                                            role="button" class="dcg-keypad-btn dcg-btn-dark-on-gray"
+                                                            dcg-command="5" aria-label="5" ontap=""><span
+                                                                class="dcg-keypad-btn-content">
+                                                                <div class="dcg-mq-math-mode dcg-static-mathquill-view">
+                                                                    <span class="dcg-mq-mathspeak">5</span><span
+                                                                        class="dcg-mq-root-block"
+                                                                        aria-hidden="true"><span
+                                                                            class="dcg-mq-digit">5</span></span></div>
+                                                            </span></span></div>
+                                                    <div class="dcg-keypad-btn-container" style="flex-grow:1"><span
+                                                            role="button" class="dcg-keypad-btn dcg-btn-dark-on-gray"
+                                                            dcg-command="6" aria-label="6" ontap=""><span
+                                                                class="dcg-keypad-btn-content">
+                                                                <div class="dcg-mq-math-mode dcg-static-mathquill-view">
+                                                                    <span class="dcg-mq-mathspeak">6</span><span
+                                                                        class="dcg-mq-root-block"
+                                                                        aria-hidden="true"><span
+                                                                            class="dcg-mq-digit">6</span></span></div>
+                                                            </span></span></div>
+                                                    <div class="dcg-keypad-btn-container" style="flex-grow:1"><span
+                                                            role="button" class="dcg-keypad-btn dcg-btn-light-on-gray"
+                                                            dcg-command="*" aria-label="Times" ontap=""><span
+                                                                class="dcg-keypad-btn-content">
+                                                                <div class="dcg-mq-math-mode dcg-static-mathquill-view">
+                                                                    <span class="dcg-mq-mathspeak">times</span><span
+                                                                        class="dcg-mq-root-block"
+                                                                        aria-hidden="true"><span
+                                                                            class="dcg-mq-binary-operator">×</span></span>
+                                                                </div>
+                                                            </span></span></div>
+                                                    <div style="flex-grow:0.5"></div>
+                                                    <div class="dcg-keypad-btn-container" style="flex-grow:1"><span
+                                                            role="button" class="dcg-keypad-btn dcg-btn-dark-on-gray"
+                                                            dcg-command="left" aria-label="Left Arrow" ontap=""><span
+                                                                class="dcg-keypad-btn-content"><i
+                                                                    class="dcg-icon-arrow-left"
+                                                                    aria-hidden="true"></i></span></span></div>
+                                                    <div class="dcg-keypad-btn-container" style="flex-grow:1"><span
+                                                            role="button" class="dcg-keypad-btn dcg-btn-dark-on-gray"
+                                                            dcg-command="right" aria-label="Right Arrow" ontap=""><span
+                                                                class="dcg-keypad-btn-content"><i
+                                                                    class="dcg-icon-arrow-right"
+                                                                    aria-hidden="true"></i></span></span></div>
+                                                </div>
+                                                <div class="dcg-keypad-row">
+                                                    <div class="dcg-keypad-btn-container" style="flex-grow:1"><span
+                                                            role="button" class="dcg-keypad-btn dcg-btn-light-on-gray"
+                                                            dcg-command="|a|" aria-label="Absolute Value" ontap=""><span
+                                                                class="dcg-keypad-btn-content">
+                                                                <div class="dcg-mq-math-mode dcg-static-mathquill-view">
+                                                                    <span class="dcg-mq-mathspeak">| "a" |</span><span
+                                                                        class="dcg-mq-root-block"
+                                                                        aria-hidden="true"><span>|</span><var>a</var><span>|</span></span>
+                                                                </div>
+                                                            </span></span></div>
+                                                    <div class="dcg-keypad-btn-container" style="flex-grow:1"><span
+                                                            role="button" class="dcg-keypad-btn dcg-btn-light-on-gray"
+                                                            dcg-command="," aria-label="," ontap=""><span
+                                                                class="dcg-keypad-btn-content">
+                                                                <div class="dcg-mq-math-mode dcg-static-mathquill-view">
+                                                                    <span class="dcg-mq-mathspeak">,</span><span
+                                                                        class="dcg-mq-root-block"
+                                                                        aria-hidden="true"><span>,</span></span></div>
+                                                            </span></span></div>
+                                                    <div class="dcg-keypad-btn-container" style="flex-grow:1"><span
+                                                            role="button" class="dcg-keypad-btn dcg-btn-light-on-gray"
+                                                            dcg-command="<=" aria-label="<=" ontap=""><span
+                                                                class="dcg-keypad-btn-content">
+                                                                <div class="dcg-mq-math-mode dcg-static-mathquill-view">
+                                                                    <span class="dcg-mq-mathspeak">less than or equal
+                                                                        to</span><span class="dcg-mq-root-block"
+                                                                        aria-hidden="true"><span
+                                                                            class="dcg-mq-binary-operator">≤</span></span>
+                                                                </div>
+                                                            </span></span></div>
+                                                    <div class="dcg-keypad-btn-container" style="flex-grow:1"><span
+                                                            role="button" class="dcg-keypad-btn dcg-btn-light-on-gray"
+                                                            dcg-command=">=" aria-label=">=" ontap=""><span
+                                                                class="dcg-keypad-btn-content">
+                                                                <div class="dcg-mq-math-mode dcg-static-mathquill-view">
+                                                                    <span class="dcg-mq-mathspeak">greater than or equal
+                                                                        to</span><span class="dcg-mq-root-block"
+                                                                        aria-hidden="true"><span
+                                                                            class="dcg-mq-binary-operator">≥</span></span>
+                                                                </div>
+                                                            </span></span></div>
+                                                    <div style="flex-grow:0.5"></div>
+                                                    <div class="dcg-keypad-btn-container" style="flex-grow:1"><span
+                                                            role="button" class="dcg-keypad-btn dcg-btn-dark-on-gray"
+                                                            dcg-command="1" aria-label="1" ontap=""><span
+                                                                class="dcg-keypad-btn-content">
+                                                                <div class="dcg-mq-math-mode dcg-static-mathquill-view">
+                                                                    <span class="dcg-mq-mathspeak">1</span><span
+                                                                        class="dcg-mq-root-block"
+                                                                        aria-hidden="true"><span
+                                                                            class="dcg-mq-digit">1</span></span></div>
+                                                            </span></span></div>
+                                                    <div class="dcg-keypad-btn-container" style="flex-grow:1"><span
+                                                            role="button" class="dcg-keypad-btn dcg-btn-dark-on-gray"
+                                                            dcg-command="2" aria-label="2" ontap=""><span
+                                                                class="dcg-keypad-btn-content">
+                                                                <div class="dcg-mq-math-mode dcg-static-mathquill-view">
+                                                                    <span class="dcg-mq-mathspeak">2</span><span
+                                                                        class="dcg-mq-root-block"
+                                                                        aria-hidden="true"><span
+                                                                            class="dcg-mq-digit">2</span></span></div>
+                                                            </span></span></div>
+                                                    <div class="dcg-keypad-btn-container" style="flex-grow:1"><span
+                                                            role="button" class="dcg-keypad-btn dcg-btn-dark-on-gray"
+                                                            dcg-command="3" aria-label="3" ontap=""><span
+                                                                class="dcg-keypad-btn-content">
+                                                                <div class="dcg-mq-math-mode dcg-static-mathquill-view">
+                                                                    <span class="dcg-mq-mathspeak">3</span><span
+                                                                        class="dcg-mq-root-block"
+                                                                        aria-hidden="true"><span
+                                                                            class="dcg-mq-digit">3</span></span></div>
+                                                            </span></span></div>
+                                                    <div class="dcg-keypad-btn-container" style="flex-grow:1"><span
+                                                            role="button" class="dcg-keypad-btn dcg-btn-light-on-gray"
+                                                            dcg-command="-" aria-label="Minus" ontap=""><span
+                                                                class="dcg-keypad-btn-content">
+                                                                <div class="dcg-mq-math-mode dcg-static-mathquill-view">
+                                                                    <span class="dcg-mq-mathspeak">negative</span><span
+                                                                        class="dcg-mq-root-block"
+                                                                        aria-hidden="true"><span
+                                                                            class="">−</span></span></div>
+                                                            </span></span></div>
+                                                    <div style="flex-grow:1"></div>
+                                                    <div class="dcg-keypad-btn-container" style="flex-grow:1.5"><span
+                                                            role="button" class="dcg-keypad-btn dcg-btn-dark-on-gray"
+                                                            dcg-command="backspace" aria-label="Backspace"
+                                                            ontap=""><span class="dcg-keypad-btn-content"><i
+                                                                    class="dcg-icon-delete"
+                                                                    aria-hidden="true"></i></span></span></div>
+                                                </div>
+                                                <div class="dcg-keypad-row">
+                                                    <div class="dcg-abc-audio-container">
+                                                        <div class="dcg-keypad-btn-container" style="flex-grow:1"><span
+                                                                role="button"
+                                                                class="dcg-keypad-btn dcg-btn-dark-on-gray"
+                                                                dcg-command="ABC" aria-label="Toggle Letters"
+                                                                ontap=""><span class="dcg-keypad-btn-content">A B
+                                                                    C</span></span></div>
+                                                        <div class="dcg-keypad-btn-container dcg-disabled"
+                                                            style="flex-grow:1"><span role="button"
+                                                                class="dcg-keypad-btn dcg-btn-dark-on-gray"
+                                                                dcg-command="Audio" aria-label="Toggle Audio Trace"
+                                                                aria-disabled="true" ontap=""><span
+                                                                    class="dcg-keypad-btn-content"><i
+                                                                        class="dcg-icon-volume"
+                                                                        aria-hidden="true"></i></span></span></div>
+                                                    </div>
+                                                    <div class="dcg-keypad-btn-container" style="flex-grow:1"><span
+                                                            role="button" class="dcg-keypad-btn dcg-btn-light-on-gray"
+                                                            dcg-command="sqrt" aria-label="Square Root" ontap=""><span
+                                                                class="dcg-keypad-btn-content">
+                                                                <div class="dcg-mq-math-mode dcg-static-mathquill-view">
+                                                                    <span class="dcg-mq-mathspeak">StartRoot, ,
+                                                                        EndRoot</span><span class="dcg-mq-root-block"
+                                                                        aria-hidden="true"><span
+                                                                            class="dcg-mq-non-leaf dcg-mq-sqrt-container"><span
+                                                                                class="dcg-mq-scaled dcg-mq-sqrt-prefix"><svg
+                                                                                    preserveAspectRatio="none"
+                                                                                    viewBox="0 0 32 54">
+                                                                                    <path
+                                                                                        d="M0 33 L7 27 L12.5 47 L13 47 L30 0 L32 0 L13 54 L11 54 L4.5 31 L0 33">
+                                                                                    </path>
+                                                                                </svg></span><span
+                                                                                class="dcg-mq-non-leaf dcg-mq-sqrt-stem dcg-mq-empty"></span></span></span>
+                                                                </div>
+                                                            </span></span></div>
+                                                    <div class="dcg-keypad-btn-container" style="flex-grow:1"><span
+                                                            role="button" class="dcg-keypad-btn dcg-btn-light-on-gray"
+                                                            dcg-command="pi" aria-label="Pi" ontap=""><span
+                                                                class="dcg-keypad-btn-content">
+                                                                <div class="dcg-mq-math-mode dcg-static-mathquill-view">
+                                                                    <span class="dcg-mq-mathspeak">pi</span><span
+                                                                        class="dcg-mq-root-block"
+                                                                        aria-hidden="true"><span
+                                                                            class="dcg-mq-nonSymbola">π</span></span>
+                                                                </div>
+                                                            </span></span></div>
+                                                    <div style="flex-grow:0.5"></div>
+                                                    <div class="dcg-keypad-btn-container" style="flex-grow:1"><span
+                                                            role="button" class="dcg-keypad-btn dcg-btn-dark-on-gray"
+                                                            dcg-command="0" aria-label="0" ontap=""><span
+                                                                class="dcg-keypad-btn-content">
+                                                                <div class="dcg-mq-math-mode dcg-static-mathquill-view">
+                                                                    <span class="dcg-mq-mathspeak">0</span><span
+                                                                        class="dcg-mq-root-block"
+                                                                        aria-hidden="true"><span
+                                                                            class="dcg-mq-digit">0</span></span></div>
+                                                            </span></span></div>
+                                                    <div class="dcg-keypad-btn-container" style="flex-grow:1"><span
+                                                            role="button" class="dcg-keypad-btn dcg-btn-dark-on-gray"
+                                                            dcg-command="." aria-label="Decimal" ontap=""><span
+                                                                class="dcg-keypad-btn-content">
+                                                                <div class="dcg-mq-math-mode dcg-static-mathquill-view">
+                                                                    <span class="dcg-mq-mathspeak">.</span><span
+                                                                        class="dcg-mq-root-block"
+                                                                        aria-hidden="true"><span
+                                                                            class="dcg-mq-digit">.</span></span></div>
+                                                            </span></span></div>
+                                                    <div class="dcg-keypad-btn-container" style="flex-grow:1"><span
+                                                            role="button" class="dcg-keypad-btn dcg-btn-light-on-gray"
+                                                            dcg-command="=" aria-label="=" ontap=""><span
+                                                                class="dcg-keypad-btn-content">
+                                                                <div class="dcg-mq-math-mode dcg-static-mathquill-view">
+                                                                    <span class="dcg-mq-mathspeak">equals</span><span
+                                                                        class="dcg-mq-root-block"
+                                                                        aria-hidden="true"><span
+                                                                            class="dcg-mq-binary-operator">=</span></span>
+                                                                </div>
+                                                            </span></span></div>
+                                                    <div class="dcg-keypad-btn-container" style="flex-grow:1"><span
+                                                            role="button" class="dcg-keypad-btn dcg-btn-light-on-gray"
+                                                            dcg-command="+" aria-label="Plus" ontap=""><span
+                                                                class="dcg-keypad-btn-content">
+                                                                <div class="dcg-mq-math-mode dcg-static-mathquill-view">
+                                                                    <span class="dcg-mq-mathspeak">positive</span><span
+                                                                        class="dcg-mq-root-block"
+                                                                        aria-hidden="true"><span
+                                                                            class="">+</span></span></div>
+                                                            </span></span></div>
+                                                    <div style="flex-grow:0.5"></div>
+                                                    <div class="dcg-keypad-btn-container" style="flex-grow:2"><span
+                                                            role="button" class="dcg-keypad-btn dcg-btn-short-blue"
+                                                            dcg-command="enter" aria-label="Enter" ontap=""><span
+                                                                class="dcg-keypad-btn-content"><i
+                                                                    class="dcg-icon-arrow-enter"
+                                                                    aria-hidden="true"></i></span></span></div>
+                                                </div>
+                                            </div>
+                                            <div style="display: none"></div>
+                                        </div>
+                                        <div style="display: none"></div>
+                                    </div>
+                                </div>
+                                <div class="dcg-show-keypad-container">
+                                    <div class="dcg-tooltip-hit-area-container" handleevent="true" ontap="">
+                                        <div role="button" aria-label="Show Keypad"
+                                            class="dcg-btn-flat-gray dcg-show-keypad dcg-do-not-blur"
+                                            style="background:#ededed" ontap=""><i class="dcg-icon-keyboard"
+                                                aria-hidden="true"></i><i class="dcg-icon-caret-up dcg-do-not-blur"
+                                                aria-hidden="true"></i></div>
+                                    </div>
+                                </div>
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- <div id="mygraphs-container">
+            <div class="dcg-mygraphs">
+                <div class="dcg-resources-container">
+                    <div class="dcg-account-reminder"><a role="link" tabindex="0"
+                            class="dcg-btn-white-outline dcg-action-createaccount" ontap="">Sign Up</a>or<a role="link"
+                            tabindex="0" class="dcg-action-login" ontap="">Log In</a>
+                        <div>to save your graphs!</div>
+                    </div>
+                    <div style="display: none"></div>
+                    <div class="dcg-scrollable">
+                        <div class="dcg-scrollable-interior">
+                            <div style="display: none"></div>
+                            <div style="display: none"></div>
+                            <div style="display: none"></div>
+                            <div role="link" tabindex="0" class="new-blank-graph dcg-action-newblankgraph" ontap="">
+                                <div class="new-blank-graph-inner"><span class="dcg-add-blank"><i class="dcg-icon-plus"
+                                            aria-hidden="true"></i></span><span class="dcg-new-graph-title">New Blank
+                                        Graph</span></div>
+                            </div>
+                            <div style="display: none"></div>
+                            <div style="display: none"></div>
+                            <div style="display: none"></div>
+                            <div class="dcg-saved-graphs-list" role="list"></div>
+                            <div style="display: none"></div>
+                            <div style="display: none"></div>
+                            <div class="dcg-mygraphs-section-title-container"><span role="heading" aria-level="1"
+                                    class="dcg-mygraphs-section-title">Examples</span></div>
+                            <div role="list">
+                                <div role="listitem" class="saved-graph graph-link-container" ontap="">
+                                    <div role="link" tabindex="0"
+                                        class="graph-link dcg-action-preview-graph example-graph"><span
+                                            class="dcg-thumb"
+                                            style="background-image:url(https://saved-work.desmos.com/calc_thumbs/production/2rnqgoa6a4.png)"></span>
+                                        <div class="dcg-graph-details">
+                                            <div class="dcg-title">Lines: Slope Intercept Form</div>
+                                            <div class="dcg-subtitle dcg-graph-date">example</div>
+                                        </div>
+                                    </div>
+                                    <div style="display: none"></div>
+                                    <div style="display: none"></div>
+                                    <div style="display: none"></div>
+                                </div>
+                                <div role="listitem" class="saved-graph graph-link-container" ontap="">
+                                    <div role="link" tabindex="0"
+                                        class="graph-link dcg-action-preview-graph example-graph"><span
+                                            class="dcg-thumb"
+                                            style="background-image:url(https://saved-work.desmos.com/calc_thumbs/production/onfy0dzx2o.png)"></span>
+                                        <div class="dcg-graph-details">
+                                            <div class="dcg-title">Lines: Point Slope Form</div>
+                                            <div class="dcg-subtitle dcg-graph-date">example</div>
+                                        </div>
+                                    </div>
+                                    <div style="display: none"></div>
+                                    <div style="display: none"></div>
+                                    <div style="display: none"></div>
+                                </div>
+                                <div role="listitem" class="saved-graph graph-link-container" ontap="">
+                                    <div role="link" tabindex="0"
+                                        class="graph-link dcg-action-preview-graph example-graph"><span
+                                            class="dcg-thumb"
+                                            style="background-image:url(https://saved-work.desmos.com/calc_thumbs/production/md6buy4efz.png)"></span>
+                                        <div class="dcg-graph-details">
+                                            <div class="dcg-title">Lines: Two Point Form</div>
+                                            <div class="dcg-subtitle dcg-graph-date">example</div>
+                                        </div>
+                                    </div>
+                                    <div style="display: none"></div>
+                                    <div style="display: none"></div>
+                                    <div style="display: none"></div>
+                                </div>
+                                <div role="listitem" class="saved-graph graph-link-container" ontap="">
+                                    <div role="link" tabindex="0"
+                                        class="graph-link dcg-action-preview-graph example-graph"><span
+                                            class="dcg-thumb"
+                                            style="background-image:url(https://saved-work.desmos.com/calc_thumbs/production/zukjgk9iry.png)"></span>
+                                        <div class="dcg-graph-details">
+                                            <div class="dcg-title">Parabolas: Standard Form</div>
+                                            <div class="dcg-subtitle dcg-graph-date">example</div>
+                                        </div>
+                                    </div>
+                                    <div style="display: none"></div>
+                                    <div style="display: none"></div>
+                                    <div style="display: none"></div>
+                                </div>
+                                <div role="listitem" class="saved-graph graph-link-container" ontap="">
+                                    <div role="link" tabindex="0"
+                                        class="graph-link dcg-action-preview-graph example-graph"><span
+                                            class="dcg-thumb"
+                                            style="background-image:url(https://saved-work.desmos.com/calc_thumbs/production/8keeh1pt5l.png)"></span>
+                                        <div class="dcg-graph-details">
+                                            <div class="dcg-title">Parabolas: Vertex Form</div>
+                                            <div class="dcg-subtitle dcg-graph-date">example</div>
+                                        </div>
+                                    </div>
+                                    <div style="display: none"></div>
+                                    <div style="display: none"></div>
+                                    <div style="display: none"></div>
+                                </div>
+                                <div role="listitem" class="saved-graph graph-link-container" ontap="">
+                                    <div role="link" tabindex="0"
+                                        class="graph-link dcg-action-preview-graph example-graph"><span
+                                            class="dcg-thumb"
+                                            style="background-image:url(https://saved-work.desmos.com/calc_thumbs/production/dxkknajdqb.png)"></span>
+                                        <div class="dcg-graph-details">
+                                            <div class="dcg-title">Parabolas: Standard Form + Tangent</div>
+                                            <div class="dcg-subtitle dcg-graph-date">example</div>
+                                        </div>
+                                    </div>
+                                    <div style="display: none"></div>
+                                    <div style="display: none"></div>
+                                    <div style="display: none"></div>
+                                </div>
+                                <div role="listitem" class="saved-graph graph-link-container" ontap="">
+                                    <div role="link" tabindex="0"
+                                        class="graph-link dcg-action-preview-graph example-graph"><span
+                                            class="dcg-thumb"
+                                            style="background-image:url(https://saved-work.desmos.com/calc_thumbs/production/kihjluohq9.png)"></span>
+                                        <div class="dcg-graph-details">
+                                            <div class="dcg-title">Trigonometry: Period and Amplitude</div>
+                                            <div class="dcg-subtitle dcg-graph-date">example</div>
+                                        </div>
+                                    </div>
+                                    <div style="display: none"></div>
+                                    <div style="display: none"></div>
+                                    <div style="display: none"></div>
+                                </div>
+                                <div role="listitem" class="saved-graph graph-link-container" ontap="">
+                                    <div role="link" tabindex="0"
+                                        class="graph-link dcg-action-preview-graph example-graph"><span
+                                            class="dcg-thumb"
+                                            style="background-image:url(https://saved-work.desmos.com/calc_thumbs/production/l3u8133jwj.png)"></span>
+                                        <div class="dcg-graph-details">
+                                            <div class="dcg-title">Trigonometry: Phase</div>
+                                            <div class="dcg-subtitle dcg-graph-date">example</div>
+                                        </div>
+                                    </div>
+                                    <div style="display: none"></div>
+                                    <div style="display: none"></div>
+                                    <div style="display: none"></div>
+                                </div>
+                                <div role="listitem" class="saved-graph graph-link-container" ontap="">
+                                    <div role="link" tabindex="0"
+                                        class="graph-link dcg-action-preview-graph example-graph"><span
+                                            class="dcg-thumb"
+                                            style="background-image:url(https://saved-work.desmos.com/calc_thumbs/production/7eeumgl7it.png)"></span>
+                                        <div class="dcg-graph-details">
+                                            <div class="dcg-title">Trigonometry: Wave Interference</div>
+                                            <div class="dcg-subtitle dcg-graph-date">example</div>
+                                        </div>
+                                    </div>
+                                    <div style="display: none"></div>
+                                    <div style="display: none"></div>
+                                    <div style="display: none"></div>
+                                </div>
+                                <div role="listitem" class="saved-graph graph-link-container" ontap="">
+                                    <div role="link" tabindex="0"
+                                        class="graph-link dcg-action-preview-graph example-graph"><span
+                                            class="dcg-thumb"
+                                            style="background-image:url(https://saved-work.desmos.com/calc_thumbs/production/qmzx2skkzy.png)"></span>
+                                        <div class="dcg-graph-details">
+                                            <div class="dcg-title">Trigonometry: Unit Circle</div>
+                                            <div class="dcg-subtitle dcg-graph-date">example</div>
+                                        </div>
+                                    </div>
+                                    <div style="display: none"></div>
+                                    <div style="display: none"></div>
+                                    <div style="display: none"></div>
+                                </div>
+                                <div role="listitem" class="saved-graph graph-link-container" ontap="">
+                                    <div role="link" tabindex="0"
+                                        class="graph-link dcg-action-preview-graph example-graph"><span
+                                            class="dcg-thumb"
+                                            style="background-image:url(https://saved-work.desmos.com/calc_thumbs/production/ivud1auwvw.png)"></span>
+                                        <div class="dcg-graph-details">
+                                            <div class="dcg-title">Conic Sections: Circle</div>
+                                            <div class="dcg-subtitle dcg-graph-date">example</div>
+                                        </div>
+                                    </div>
+                                    <div style="display: none"></div>
+                                    <div style="display: none"></div>
+                                    <div style="display: none"></div>
+                                </div>
+                                <div role="listitem" class="saved-graph graph-link-container" ontap="">
+                                    <div role="link" tabindex="0"
+                                        class="graph-link dcg-action-preview-graph example-graph"><span
+                                            class="dcg-thumb"
+                                            style="background-image:url(https://saved-work.desmos.com/calc_thumbs/production/djcrjdfiif.png)"></span>
+                                        <div class="dcg-graph-details">
+                                            <div class="dcg-title">Conic Sections: Parabola and Focus</div>
+                                            <div class="dcg-subtitle dcg-graph-date">example</div>
+                                        </div>
+                                    </div>
+                                    <div style="display: none"></div>
+                                    <div style="display: none"></div>
+                                    <div style="display: none"></div>
+                                </div>
+                                <div role="listitem" class="saved-graph graph-link-container" ontap="">
+                                    <div role="link" tabindex="0"
+                                        class="graph-link dcg-action-preview-graph example-graph"><span
+                                            class="dcg-thumb"
+                                            style="background-image:url(https://saved-work.desmos.com/calc_thumbs/production/afja7ee9mh.png)"></span>
+                                        <div class="dcg-graph-details">
+                                            <div class="dcg-title">Conic Sections: Ellipse with Foci</div>
+                                            <div class="dcg-subtitle dcg-graph-date">example</div>
+                                        </div>
+                                    </div>
+                                    <div style="display: none"></div>
+                                    <div style="display: none"></div>
+                                    <div style="display: none"></div>
+                                </div>
+                                <div role="listitem" class="saved-graph graph-link-container" ontap="">
+                                    <div role="link" tabindex="0"
+                                        class="graph-link dcg-action-preview-graph example-graph"><span
+                                            class="dcg-thumb"
+                                            style="background-image:url(https://saved-work.desmos.com/calc_thumbs/production/vgfqbejegx.png)"></span>
+                                        <div class="dcg-graph-details">
+                                            <div class="dcg-title">Conic Sections: Hyperbola</div>
+                                            <div class="dcg-subtitle dcg-graph-date">example</div>
+                                        </div>
+                                    </div>
+                                    <div style="display: none"></div>
+                                    <div style="display: none"></div>
+                                    <div style="display: none"></div>
+                                </div>
+                                <div role="listitem" class="saved-graph graph-link-container" ontap="">
+                                    <div role="link" tabindex="0"
+                                        class="graph-link dcg-action-preview-graph example-graph"><span
+                                            class="dcg-thumb"
+                                            style="background-image:url(https://saved-work.desmos.com/calc_thumbs/production/0ovfwwmfrb.png)"></span>
+                                        <div class="dcg-graph-details">
+                                            <div class="dcg-title">Polar: Rose</div>
+                                            <div class="dcg-subtitle dcg-graph-date">example</div>
+                                        </div>
+                                    </div>
+                                    <div style="display: none"></div>
+                                    <div style="display: none"></div>
+                                    <div style="display: none"></div>
+                                </div>
+                                <div role="listitem" class="saved-graph graph-link-container" ontap="">
+                                    <div role="link" tabindex="0"
+                                        class="graph-link dcg-action-preview-graph example-graph"><span
+                                            class="dcg-thumb"
+                                            style="background-image:url(https://saved-work.desmos.com/calc_thumbs/production/qlbdlxyrza.png)"></span>
+                                        <div class="dcg-graph-details">
+                                            <div class="dcg-title">Polar: Logarithmic Spiral</div>
+                                            <div class="dcg-subtitle dcg-graph-date">example</div>
+                                        </div>
+                                    </div>
+                                    <div style="display: none"></div>
+                                    <div style="display: none"></div>
+                                    <div style="display: none"></div>
+                                </div>
+                                <div role="listitem" class="saved-graph graph-link-container" ontap="">
+                                    <div role="link" tabindex="0"
+                                        class="graph-link dcg-action-preview-graph example-graph"><span
+                                            class="dcg-thumb"
+                                            style="background-image:url(https://saved-work.desmos.com/calc_thumbs/production/rayzacuktw.png)"></span>
+                                        <div class="dcg-graph-details">
+                                            <div class="dcg-title">Polar: Limacon</div>
+                                            <div class="dcg-subtitle dcg-graph-date">example</div>
+                                        </div>
+                                    </div>
+                                    <div style="display: none"></div>
+                                    <div style="display: none"></div>
+                                    <div style="display: none"></div>
+                                </div>
+                                <div role="listitem" class="saved-graph graph-link-container" ontap="">
+                                    <div role="link" tabindex="0"
+                                        class="graph-link dcg-action-preview-graph example-graph"><span
+                                            class="dcg-thumb"
+                                            style="background-image:url(https://saved-work.desmos.com/calc_thumbs/production/gxnu7fbgks.png)"></span>
+                                        <div class="dcg-graph-details">
+                                            <div class="dcg-title">Polar: Conic Sections</div>
+                                            <div class="dcg-subtitle dcg-graph-date">example</div>
+                                        </div>
+                                    </div>
+                                    <div style="display: none"></div>
+                                    <div style="display: none"></div>
+                                    <div style="display: none"></div>
+                                </div>
+                                <div role="listitem" class="saved-graph graph-link-container" ontap="">
+                                    <div role="link" tabindex="0"
+                                        class="graph-link dcg-action-preview-graph example-graph"><span
+                                            class="dcg-thumb"
+                                            style="background-image:url(https://saved-work.desmos.com/calc_thumbs/production/rnyjcjpouf.png)"></span>
+                                        <div class="dcg-graph-details">
+                                            <div class="dcg-title">Parametric: Introduction</div>
+                                            <div class="dcg-subtitle dcg-graph-date">example</div>
+                                        </div>
+                                    </div>
+                                    <div style="display: none"></div>
+                                    <div style="display: none"></div>
+                                    <div style="display: none"></div>
+                                </div>
+                                <div role="listitem" class="saved-graph graph-link-container" ontap="">
+                                    <div role="link" tabindex="0"
+                                        class="graph-link dcg-action-preview-graph example-graph"><span
+                                            class="dcg-thumb"
+                                            style="background-image:url(https://saved-work.desmos.com/calc_thumbs/production/eg5he4xpg9.png)"></span>
+                                        <div class="dcg-graph-details">
+                                            <div class="dcg-title">Parametric: Cycloid</div>
+                                            <div class="dcg-subtitle dcg-graph-date">example</div>
+                                        </div>
+                                    </div>
+                                    <div style="display: none"></div>
+                                    <div style="display: none"></div>
+                                    <div style="display: none"></div>
+                                </div>
+                                <div role="listitem" class="saved-graph graph-link-container" ontap="">
+                                    <div role="link" tabindex="0"
+                                        class="graph-link dcg-action-preview-graph example-graph"><span
+                                            class="dcg-thumb"
+                                            style="background-image:url(https://saved-work.desmos.com/calc_thumbs/production/nyterjs0uf.png)"></span>
+                                        <div class="dcg-graph-details">
+                                            <div class="dcg-title">Transformations: Translating a Function</div>
+                                            <div class="dcg-subtitle dcg-graph-date">example</div>
+                                        </div>
+                                    </div>
+                                    <div style="display: none"></div>
+                                    <div style="display: none"></div>
+                                    <div style="display: none"></div>
+                                </div>
+                                <div role="listitem" class="saved-graph graph-link-container" ontap="">
+                                    <div role="link" tabindex="0"
+                                        class="graph-link dcg-action-preview-graph example-graph"><span
+                                            class="dcg-thumb"
+                                            style="background-image:url(https://saved-work.desmos.com/calc_thumbs/production/vdkjrpznnu.png)"></span>
+                                        <div class="dcg-graph-details">
+                                            <div class="dcg-title">Transformations: Scaling a Function</div>
+                                            <div class="dcg-subtitle dcg-graph-date">example</div>
+                                        </div>
+                                    </div>
+                                    <div style="display: none"></div>
+                                    <div style="display: none"></div>
+                                    <div style="display: none"></div>
+                                </div>
+                                <div role="listitem" class="saved-graph graph-link-container" ontap="">
+                                    <div role="link" tabindex="0"
+                                        class="graph-link dcg-action-preview-graph example-graph"><span
+                                            class="dcg-thumb"
+                                            style="background-image:url(https://saved-work.desmos.com/calc_thumbs/production/fcjhdt1xdw.png)"></span>
+                                        <div class="dcg-graph-details">
+                                            <div class="dcg-title">Transformations: Inverse of a Function</div>
+                                            <div class="dcg-subtitle dcg-graph-date">example</div>
+                                        </div>
+                                    </div>
+                                    <div style="display: none"></div>
+                                    <div style="display: none"></div>
+                                    <div style="display: none"></div>
+                                </div>
+                                <div role="listitem" class="saved-graph graph-link-container" ontap="">
+                                    <div role="link" tabindex="0"
+                                        class="graph-link dcg-action-preview-graph example-graph"><span
+                                            class="dcg-thumb"
+                                            style="background-image:url(https://saved-work.desmos.com/calc_thumbs/production/jwquvmikhr.png)"></span>
+                                        <div class="dcg-graph-details">
+                                            <div class="dcg-title">Statistics: Linear Regression</div>
+                                            <div class="dcg-subtitle dcg-graph-date">example</div>
+                                        </div>
+                                    </div>
+                                    <div style="display: none"></div>
+                                    <div style="display: none"></div>
+                                    <div style="display: none"></div>
+                                </div>
+                                <div role="listitem" class="saved-graph graph-link-container" ontap="">
+                                    <div role="link" tabindex="0"
+                                        class="graph-link dcg-action-preview-graph example-graph"><span
+                                            class="dcg-thumb"
+                                            style="background-image:url(https://saved-work.desmos.com/calc_thumbs/production/qrdbrcfnsl.png)"></span>
+                                        <div class="dcg-graph-details">
+                                            <div class="dcg-title">Statistics: Anscombe's Quartet</div>
+                                            <div class="dcg-subtitle dcg-graph-date">example</div>
+                                        </div>
+                                    </div>
+                                    <div style="display: none"></div>
+                                    <div style="display: none"></div>
+                                    <div style="display: none"></div>
+                                </div>
+                                <div role="listitem" class="saved-graph graph-link-container" ontap="">
+                                    <div role="link" tabindex="0"
+                                        class="graph-link dcg-action-preview-graph example-graph"><span
+                                            class="dcg-thumb"
+                                            style="background-image:url(https://saved-work.desmos.com/calc_thumbs/production/sanlujpfmc.png)"></span>
+                                        <div class="dcg-graph-details">
+                                            <div class="dcg-title">Statistics: 4th Order Polynomial</div>
+                                            <div class="dcg-subtitle dcg-graph-date">example</div>
+                                        </div>
+                                    </div>
+                                    <div style="display: none"></div>
+                                    <div style="display: none"></div>
+                                    <div style="display: none"></div>
+                                </div>
+                                <div role="listitem" class="saved-graph graph-link-container" ontap="">
+                                    <div role="link" tabindex="0"
+                                        class="graph-link dcg-action-preview-graph example-graph"><span
+                                            class="dcg-thumb"
+                                            style="background-image:url(https://saved-work.desmos.com/calc_thumbs/production/iwfjdrhdyr.png)"></span>
+                                        <div class="dcg-graph-details">
+                                            <div class="dcg-title">Lists: Family of sin Curves</div>
+                                            <div class="dcg-subtitle dcg-graph-date">example</div>
+                                        </div>
+                                    </div>
+                                    <div style="display: none"></div>
+                                    <div style="display: none"></div>
+                                    <div style="display: none"></div>
+                                </div>
+                                <div role="listitem" class="saved-graph graph-link-container" ontap="">
+                                    <div role="link" tabindex="0"
+                                        class="graph-link dcg-action-preview-graph example-graph"><span
+                                            class="dcg-thumb"
+                                            style="background-image:url(https://saved-work.desmos.com/calc_thumbs/production/ib4qkln029.png)"></span>
+                                        <div class="dcg-graph-details">
+                                            <div class="dcg-title">Lists: Curve Stitching</div>
+                                            <div class="dcg-subtitle dcg-graph-date">example</div>
+                                        </div>
+                                    </div>
+                                    <div style="display: none"></div>
+                                    <div style="display: none"></div>
+                                    <div style="display: none"></div>
+                                </div>
+                                <div role="listitem" class="saved-graph graph-link-container" ontap="">
+                                    <div role="link" tabindex="0"
+                                        class="graph-link dcg-action-preview-graph example-graph"><span
+                                            class="dcg-thumb"
+                                            style="background-image:url(https://saved-work.desmos.com/calc_thumbs/production/zdv2kras4n.png)"></span>
+                                        <div class="dcg-graph-details">
+                                            <div class="dcg-title">Lists: Plotting a List of Points</div>
+                                            <div class="dcg-subtitle dcg-graph-date">example</div>
+                                        </div>
+                                    </div>
+                                    <div style="display: none"></div>
+                                    <div style="display: none"></div>
+                                    <div style="display: none"></div>
+                                </div>
+                                <div role="listitem" class="saved-graph graph-link-container" ontap="">
+                                    <div role="link" tabindex="0"
+                                        class="graph-link dcg-action-preview-graph example-graph"><span
+                                            class="dcg-thumb"
+                                            style="background-image:url(https://saved-work.desmos.com/calc_thumbs/production/qtzamwcdrk.png)"></span>
+                                        <div class="dcg-graph-details">
+                                            <div class="dcg-title">Calculus: Derivatives</div>
+                                            <div class="dcg-subtitle dcg-graph-date">example</div>
+                                        </div>
+                                    </div>
+                                    <div style="display: none"></div>
+                                    <div style="display: none"></div>
+                                    <div style="display: none"></div>
+                                </div>
+                                <div role="listitem" class="saved-graph graph-link-container" ontap="">
+                                    <div role="link" tabindex="0"
+                                        class="graph-link dcg-action-preview-graph example-graph"><span
+                                            class="dcg-thumb"
+                                            style="background-image:url(https://saved-work.desmos.com/calc_thumbs/production/mekfho0w38.png)"></span>
+                                        <div class="dcg-graph-details">
+                                            <div class="dcg-title">Calculus: Secant Line</div>
+                                            <div class="dcg-subtitle dcg-graph-date">example</div>
+                                        </div>
+                                    </div>
+                                    <div style="display: none"></div>
+                                    <div style="display: none"></div>
+                                    <div style="display: none"></div>
+                                </div>
+                                <div role="listitem" class="saved-graph graph-link-container" ontap="">
+                                    <div role="link" tabindex="0"
+                                        class="graph-link dcg-action-preview-graph example-graph"><span
+                                            class="dcg-thumb"
+                                            style="background-image:url(https://saved-work.desmos.com/calc_thumbs/production/fs3lx8gptb.png)"></span>
+                                        <div class="dcg-graph-details">
+                                            <div class="dcg-title">Calculus: Tangent Line</div>
+                                            <div class="dcg-subtitle dcg-graph-date">example</div>
+                                        </div>
+                                    </div>
+                                    <div style="display: none"></div>
+                                    <div style="display: none"></div>
+                                    <div style="display: none"></div>
+                                </div>
+                                <div role="listitem" class="saved-graph graph-link-container" ontap="">
+                                    <div role="link" tabindex="0"
+                                        class="graph-link dcg-action-preview-graph example-graph"><span
+                                            class="dcg-thumb"
+                                            style="background-image:url(https://saved-work.desmos.com/calc_thumbs/production/noanuckuli.png)"></span>
+                                        <div class="dcg-graph-details">
+                                            <div class="dcg-title">Calculus: Taylor Expansion of sin(x)</div>
+                                            <div class="dcg-subtitle dcg-graph-date">example</div>
+                                        </div>
+                                    </div>
+                                    <div style="display: none"></div>
+                                    <div style="display: none"></div>
+                                    <div style="display: none"></div>
+                                </div>
+                                <div role="listitem" class="saved-graph graph-link-container" ontap="">
+                                    <div role="link" tabindex="0"
+                                        class="graph-link dcg-action-preview-graph example-graph"><span
+                                            class="dcg-thumb"
+                                            style="background-image:url(https://saved-work.desmos.com/calc_thumbs/production/qigfpckugc.png)"></span>
+                                        <div class="dcg-graph-details">
+                                            <div class="dcg-title">Calculus: Integrals</div>
+                                            <div class="dcg-subtitle dcg-graph-date">example</div>
+                                        </div>
+                                    </div>
+                                    <div style="display: none"></div>
+                                    <div style="display: none"></div>
+                                    <div style="display: none"></div>
+                                </div>
+                                <div role="listitem" class="saved-graph graph-link-container" ontap="">
+                                    <div role="link" tabindex="0"
+                                        class="graph-link dcg-action-preview-graph example-graph"><span
+                                            class="dcg-thumb"
+                                            style="background-image:url(https://saved-work.desmos.com/calc_thumbs/production/u2qz73ufju.png)"></span>
+                                        <div class="dcg-graph-details">
+                                            <div class="dcg-title">Calculus: Integral with adjustable bounds</div>
+                                            <div class="dcg-subtitle dcg-graph-date">example</div>
+                                        </div>
+                                    </div>
+                                    <div style="display: none"></div>
+                                    <div style="display: none"></div>
+                                    <div style="display: none"></div>
+                                </div>
+                                <div role="listitem" class="saved-graph graph-link-container" ontap="">
+                                    <div role="link" tabindex="0"
+                                        class="graph-link dcg-action-preview-graph example-graph"><span
+                                            class="dcg-thumb"
+                                            style="background-image:url(https://saved-work.desmos.com/calc_thumbs/production/gaa5aqyb5s.png)"></span>
+                                        <div class="dcg-graph-details">
+                                            <div class="dcg-title">Calculus: Fundamental Theorem of Calculus</div>
+                                            <div class="dcg-subtitle dcg-graph-date">example</div>
+                                        </div>
+                                    </div>
+                                    <div style="display: none"></div>
+                                    <div style="display: none"></div>
+                                    <div style="display: none"></div>
+                                </div>
+                            </div>
+                            <div style="display: none"></div>
+                            <div class="dcg-mygraphs-legal"><a href="/terms" target="_blank">Terms of Service</a>|<a
+                                    href="/privacy" target="_blank">Privacy Policy</a>
+                                <div style="display: none"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div style="display: none"></div>
+                </div>
+                <div style="display: none"></div>
+                <div style="display: none"></div>
+            </div>
+        </div> -->
+        <div id="dcg-modal-container">
+            <div></div>
+        </div>
+
+        <!-- 1pixel white image for printing in FF -->
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAIAAACQd1PeAAAAAXNSR0IArs4c6QAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9wLEhYhKmtn2wYAAAAidEVYdENvbW1lbnQAQ3JlYXRlZCB3aXRoIEdJTVAgb24gYSBNYWOHqHdDAAAADElEQVQI12P4//8/AAX+Av7czFnnAAAAAElFTkSuQmCC"
+            id="whitebg" aria-hidden="true" alt="">
+        <!-- 1 white pixel for printing in FF -->
+        <script type="text/javascript">
+            // catches errors within iframe and promotes them to qunit during tests
+            try {
+                window.onerror = window.top.onerror;
+            } catch (ex) { }
+            if (typeof Desmos === 'undefined') Desmos = {};
+            Desmos.config = {};
+            Desmos.commit = '8f5a88784c88b581a19a38dc4037b7a7d121eb07';
+        </script>
+        <!-- Pull config information, and include it in Desmos.config -->
+        <!-- TODO - get console and pushstate into regular .js files -->
+        <script type="text/javascript">
+            if (!window.console) window.console = {};
+            if (!window.console.log) window.console.log = function () { };
+        </script>
+        <!-- Make sure console.log is defined -->
+        <script type="text/javascript">
+            if (window.location.protocol === 'file:') {
+                window.history.pushState = function () { };
+                window.history.replaceState = function () { };
+            }
+        </script>
+        <!-- Make sure we don't use pushstate on file protocol -->
+
+        <script src="./calculator_desktop-814e38affadf9747c3ccf4cb042c4137df9bb9e4.js"></script>
+
+        <script>
+            require(['toplevel/calculator_desktop', 'testbridge', 'jquery'], function (calcPromise, TestBridge, $) {
+                calcPromise.then(function (calc) {
+                    $('.dcg-loading-div-container').hide();
+                    window.Calc = calc;
+                    TestBridge.ready();
+                });
+            });
+        </script>
+
+
+        <p aria-live="assertive" aria-atomic="true" class="dcg-aria-alert"></p>
+        <!-- create a table with 5 rows and 3 columns, in each cell add an input with background color green -->
+        
+    </body>
+
+</html>
+

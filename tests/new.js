@@ -1,9 +1,37 @@
-const item_1 = document.getElementsByClassName("cl")[0]
-// item_1 = item_1
-// for (let index = 0; index < item_1.length; index++) {
-//     const element = item_1[index];
-//     element.innerText = 'new item 1'
-//     console.log(index)
-// }
-// console.log(item_1.length)
-item_1.innerText = 'new item 1'
+let tables = {
+    'standard': [
+        {column: 'abc', table: 'standard'},
+        {column: 'def', table: 'standard'},
+        {column: 'ghi', table: 'standard'},
+    ]
+}
+
+let placeholders = {
+    a: {
+        column: {
+            name: 'abc',
+            table: 'standard',
+        }
+    },
+    b: {
+        column: {
+            name: 'def',
+            table: 'standard',
+        }
+    }
+}
+
+const update = (plc, column) => {
+    let plcObj = placeholders
+    plcObj = {...plcObj, [plc]: {
+        ...plcObj[plc],
+        column: column
+    }}
+    console.log(plcObj)
+    // return plcObj
+}
+
+update('a', {
+    name: 'def',
+    table: 'standard',
+})
