@@ -22,5 +22,6 @@ urlpatterns = [
     path('users_api/', include('users.urls')),
     path('stats_api/', include('stats_api.urls')),
     path('scraper_api/', include('scraper_api.urls')),
+    path('custom_tables/', include('custom_tables.urls')),
     # re_path(r'^(?:.*)/?$', include('frontend.urls')),
 ]

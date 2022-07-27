@@ -46,7 +46,7 @@ class AbstractBaseColumn(models.Model):
         abstract = True
 
     column_id = models.CharField(max_length=100)
-    # content_type = models.ForeignKey(ContentType, on_delete=models.CASCADE)
+    column_type = models.ForeignKey(ContentType, on_delete=models.CASCADE)
     # object_id = models.PositiveIntegerField()
     # content_object = GenericForeignKey('content_type', 'object_id')
 
@@ -65,7 +65,7 @@ class Column(AbstractBaseColumn):
     column_type =  models.ForeignKey(ColumnType, on_delete=models.CASCADE, related_name="column_type_columns", null=True)
     frame = models.ForeignKey(Frame, on_delete=models.CASCADE, related_name="frame_columns", null=True)
     records_added = models.BooleanField(default=False, null=True)
-    # name = models.CharField(max_length=100)
+    name = models.CharField(max_length=100, null=True)
 
 class Record(models.Model):
     record_id = models.CharField(max_length=100)
@@ -85,28 +85,28 @@ class Record(models.Model):
         elif dt == 'str':
             return self.str_value
 
-class CustomFrame(models.Model):
-    frame_id = models.CharField(max_length=100)
-    user = models.ForeignKey(User, on_delete=models.CASCADE, related_name="user_custom_frames", null=True)
-    name = models.CharField(max_length=100)
+# class CustomFrame(models.Model):
+#     frame_id = models.CharField(max_length=100)
+#     user = models.ForeignKey(User, on_delete=models.CASCADE, related_name="user_custom_frames", null=True)
+#     name = models.CharField(max_length=100)
 
-    def __str__(self) -> str:
-        return self.name
+#     def __str__(self) -> str:
+#         return self.name
 
 # class CustomRecord(models.Model):
 #     custom_frame = models.ForeignKey(CustomFrame, on_delete=models.CASCADE, related_name="custom_frame_custom_records", null=True)
 #     record = models.ForeignKey(Record, on_delete=models.CASCADE, related_name="record_custom_records", null=True)
 
-class CustomColumnType(models.Model):
-    name = models.CharField(max_length=100)
-    data_type = ''
-    source = '' # can be col
+# class CustomColumnType(models.Model):
+#     name = models.CharField(max_length=100)
+#     data_type = ''
+#     source = '' # can be col
 
-class CustomColumn(AbstractBaseColumn):
-    custom_frame = models.ForeignKey(CustomFrame, on_delete=models.CASCADE, related_name="frame_columns", null=True)
-    column_type = models.ForeignKey(CustomColumnType, on_delete=models.CASCADE, related_name="custom_column_type_columns", null=True)
-    # columns = GenericRelation(AbstractBaseColumn, related_query_name="column_custom_columns")
-    reg_ex = ''
+# class CustomColumn(AbstractBaseColumn):
+#     custom_frame = models.ForeignKey(CustomFrame, on_delete=models.CASCADE, related_name="frame_columns", null=True)
+#     column_type = models.ForeignKey(CustomColumnType, on_delete=models.CASCADE, related_name="custom_column_type_columns", null=True)
+#     # columns = GenericRelation(AbstractBaseColumn, related_query_name="column_custom_columns")
+#     reg_ex = ''
 
 # class Composition(models.Model):
 #     custom_column = models.OneToOneField(CustomColumn, primary_key=True)
@@ -121,9 +121,9 @@ class CustomColumn(AbstractBaseColumn):
 #         if type(column) == 'Custom_Column':
 #             pass
 
-class CustomPlayer(models.Model):
-    custom_frame = models.ForeignKey(CustomFrame, on_delete=models.CASCADE, related_name="frame_players", null=True)
-    player = models.ForeignKey(Player, on_delete=models.CASCADE, related_name="player_custom_players", null=True)
+# class CustomPlayer(models.Model):
+#     custom_frame = models.ForeignKey(CustomFrame, on_delete=models.CASCADE, related_name="frame_players", null=True)
+#     player = models.ForeignKey(Player, on_delete=models.CASCADE, related_name="player_custom_players", null=True)
 
 class UserFrame(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE, related_name="user_frames", null=True)
@@ -179,7 +179,7 @@ def clear():
     FrameType.objects.all().delete()
     Player.objects.all().delete()
     ColumnType.objects.all().delete()
-    CustomFrame.objects.all().delete()
+    # CustomFrame.objects.all().delete()
     # User.objects.all().delete()
 
 # from stats_api.models import clear, Frame, Player, StandardStats

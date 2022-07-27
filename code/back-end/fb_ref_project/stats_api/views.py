@@ -6,7 +6,7 @@ from rest_framework.exceptions import AuthenticationFailed
 
 import jwt
 
-from .models import Player, Frame, UserFrame, Column, Record, CustomFrame
+from .models import Player, Frame, UserFrame, Column, Record
 from users.models import User
 
 class FrameIds(APIView):
@@ -109,26 +109,26 @@ class StandardFrameView(APIView, AbstractFrameView):
         return JsonResponse(response, safe=False) 
 
 
-class CustomFrameView(APIView, AbstractFrameView):
+# class CustomFrameView(APIView, AbstractFrameView):
 
-    def get(self, request, *args, **kwargs):
-        response = {}
-        rows = kwargs['rows']
-        frame_id = kwargs['frame_id']
-        try:
-            print(frame_id)
-            frame = Frame.objects.get(frame_id=frame_id)
+#     def get(self, request, *args, **kwargs):
+#         response = {}
+#         rows = kwargs['rows']
+#         frame_id = kwargs['frame_id']
+#         try:
+#             print(frame_id)
+#             frame = Frame.objects.get(frame_id=frame_id)
             
-        except CustomFrame.DoesNotExist:
-            return JsonResponse({'error': 'custom frame not found'}, safe=False)
+#         except CustomFrame.DoesNotExist:
+#             return JsonResponse({'error': 'custom frame not found'}, safe=False)
 
-        columns = frame.frame_columns.all()
-        players = frame.frame_players.all()[:rows]
+#         columns = frame.frame_columns.all()
+#         players = frame.frame_players.all()[:rows]
 
-        data = self.get_data(players=players, columns=columns)
-        response['data'] = data
+#         data = self.get_data(players=players, columns=columns)
+#         response['data'] = data
         
-        return JsonResponse({'data': data})
+#         return JsonResponse({'data': data})
 
-    def post(self, request, *args, **kwargs):
-         data = request.data
+#     def post(self, request, *args, **kwargs):
+#          data = request.data

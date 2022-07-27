@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     'frontend',
     'stats_api',
     'scraper_api',
+    'custom_tables',
 ]
 
 MIDDLEWARE = [
