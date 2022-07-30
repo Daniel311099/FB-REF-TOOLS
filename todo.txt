@@ -16,4 +16,17 @@ apis:
 
 
 now:
-- 
+- construct custom tables and columns
+- send table to server to resolve
+- store and return table
+
+construct tables:
+- enter regex, construct server side
+- parse regex
+- select columns
+
+redux:
+- add useEffect that loads page tables into redux
+- encode table id in value of each page column option
+- add remove column button
+- add api endpoint for creating column object

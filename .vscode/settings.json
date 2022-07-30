@@ -1,0 +1,5 @@
+{
+    "python.analysis.typeCheckingMode": "basic",
+    // "reportT"
+    "python.defaultInterpreterPath": "/Users/danielfisaha/FB_REF_TOOLS/FB-REF-TOOLS/code/back-end/env_fb_ref/bin/python",
+  }
