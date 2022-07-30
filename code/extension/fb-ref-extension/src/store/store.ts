@@ -1,12 +1,19 @@
 import { configureStore } from '@reduxjs/toolkit'
 import { combineReducers } from 'redux'
-import column from './stats'
+import { TypedUseSelectorHook, useSelector } from 'react-redux'
+// import column from './columnStore'
+import pageTables from './dataSlice'
 
-const reducer = combineReducers({
-    column,
+export const reducer = combineReducers({
+    // column,
+    pageTables,
 })
 
-const store = configureStore({
+export type rootState = ReturnType<typeof reducer>
+
+export const useTypedSelector: TypedUseSelectorHook<rootState> = useSelector
+
+const store = configureStore<rootState>({
   reducer,
 })
 

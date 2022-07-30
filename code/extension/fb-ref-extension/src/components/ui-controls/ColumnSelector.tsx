@@ -1,9 +1,10 @@
 import React, { useState } from "react";
 import { ShadowRoot } from "../on-page/ShadowRoot"; 
+import { createStandardColumnAction } from "../../store/customColumnsSlice";
 
-const ColumnSelector = (props) => {
+const ColumnSelector = (props: any) => {
     const [selected, setSelected] = useState(false)
-    const clickHandler = (e) => {
+    const clickHandler = (e: any) => {
         setSelected(selected => !selected)
         props.updateColumns({
             add: selected,
@@ -15,7 +16,7 @@ const ColumnSelector = (props) => {
     }
     return (
         // <ShadowRoot>
-            <input value={selected} type="checkbox" onChange={clickHandler}></input>
+            <input checked={selected} type="checkbox" onChange={clickHandler}></input>
         // </ShadowRoot>
     )
 }

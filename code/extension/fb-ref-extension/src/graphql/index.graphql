@@ -1,0 +1,15 @@
+query tableName{
+    customTable{
+        name
+    }
+}
+
+query newQ($customTableId: Int!) {
+  compileStandardTableColumn(customTableId: $customTableId, pageColumnId:3) {
+    id
+    name
+    custom
+    customTableId
+    exp
+  }
+}
