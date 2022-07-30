@@ -44,6 +44,8 @@ INSTALLED_APPS = [
     'stats_api',
     'scraper_api',
     'custom_tables',
+    # 'strawberry',
+    'strawberry.django',
 ]
 
 MIDDLEWARE = [
